@@ -1,0 +1,9 @@
+diff id:001828,src:001796,time:1453477,execs:435570,op:havoc,rep:3,+cov -> id:001829,src:001796,time:1453707,execs:435635,op:havoc,rep:1
+Src file: /home/tianmai/workspace/bysj/codedoc/mmd.c
+  New 'line' coverage: 2002
+  New 'line' coverage: 2004
+  New 'line' coverage: 2005
+  New 'line' coverage: 2007
+  New 'line' coverage: 2008
+  New 'line' coverage: 2010
+  New 'line' coverage: 2011

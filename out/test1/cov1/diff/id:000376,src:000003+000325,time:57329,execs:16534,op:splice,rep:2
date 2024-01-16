@@ -1,0 +1,6 @@
+diff id:000375,src:000003+000325,time:56357,execs:16242,op:splice,rep:1 -> id:000376,src:000003+000325,time:57329,execs:16534,op:splice,rep:2
+Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
+  New 'line' coverage: 4513
+  New 'line' coverage: 4514
+  New 'line' coverage: 4515
+  New 'line' coverage: 4517

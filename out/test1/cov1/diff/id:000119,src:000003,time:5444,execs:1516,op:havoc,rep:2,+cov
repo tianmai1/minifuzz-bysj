@@ -1,0 +1,30 @@
+diff id:000118,src:000003,time:5372,execs:1495,op:havoc,rep:2 -> id:000119,src:000003,time:5444,execs:1516,op:havoc,rep:2,+cov
+Src file: /home/tianmai/workspace/bysj/codedoc/mmd.c
+  New 'line' coverage: 1500
+  New 'line' coverage: 1523
+  New 'line' coverage: 1526
+  New 'line' coverage: 1529
+  New 'line' coverage: 1531
+  New 'line' coverage: 1533
+  New 'line' coverage: 1534
+  New 'line' coverage: 1535
+  New 'line' coverage: 617
+  New 'line' coverage: 619
+  New 'line' coverage: 624
+  New 'line' coverage: 626
+  New 'line' coverage: 628
+  New 'line' coverage: 630
+  New 'line' coverage: 631
+  New 'line' coverage: 632
+  New 'line' coverage: 633
+  New 'line' coverage: 634
+  New 'line' coverage: 635
+  New 'line' coverage: 637
+  New 'line' coverage: 639
+  New 'line' coverage: 640
+  New 'line' coverage: 642
+  New 'line' coverage: 644
+  New 'line' coverage: 648
+  New 'line' coverage: 654
+  New 'line' coverage: 660
+  New 'line' coverage: 662

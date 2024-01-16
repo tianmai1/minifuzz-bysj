@@ -1,0 +1,25 @@
+diff id:000027,src:000003,time:682,execs:225,op:havoc,rep:2,+cov -> id:000028,src:000003,time:713,execs:233,op:havoc,rep:2,+cov
+Src file: /home/tianmai/workspace/bysj/codedoc/mmd.c
+  New 'function' coverage: mmdGetExtra()
+  New 'line' coverage: 1100
+  New 'line' coverage: 1102
+  New 'line' coverage: 1103
+  New 'line' coverage: 1104
+  New 'line' coverage: 1105
+  New 'line' coverage: 1107
+  New 'line' coverage: 1110
+  New 'line' coverage: 1116
+  New 'line' coverage: 1118
+  New 'line' coverage: 1124
+  New 'line' coverage: 288
+  New 'line' coverage: 290
+Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
+  New 'line' coverage: 2354
+  New 'line' coverage: 2426
+  New 'line' coverage: 2427
+  New 'line' coverage: 2430
+  New 'line' coverage: 2432
+  New 'line' coverage: 2434
+  New 'line' coverage: 2437
+  New 'line' coverage: 2439
+  New 'line' coverage: 2440

@@ -1,0 +1,14 @@
+diff id:001474,src:001280,time:815767,execs:243541,op:havoc,rep:7 -> id:001475,src:001280,time:815801,execs:243549,op:havoc,rep:3
+Src file: /home/tianmai/workspace/bysj/codedoc/mmd.c
+  New 'line' coverage: 2027
+  New 'line' coverage: 2028
+  New 'line' coverage: 2030
+  New 'line' coverage: 2032
+  New 'line' coverage: 2034
+  New 'line' coverage: 2042
+  New 'line' coverage: 2058
+  New 'line' coverage: 2061
+  New 'line' coverage: 2062
+  New 'line' coverage: 2247
+  New 'line' coverage: 2249
+  New 'line' coverage: 2322

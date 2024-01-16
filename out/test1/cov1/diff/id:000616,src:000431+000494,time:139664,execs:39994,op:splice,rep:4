@@ -1,0 +1,7 @@
+diff id:000615,src:000431+000494,time:139549,execs:39959,op:splice,rep:3 -> id:000616,src:000431+000494,time:139664,execs:39994,op:splice,rep:4
+Src file: /home/tianmai/workspace/bysj/codedoc/mmd.c
+  New 'line' coverage: 1970
+  New 'line' coverage: 1972
+  New 'line' coverage: 1973
+  New 'line' coverage: 1975
+  New 'line' coverage: 1976

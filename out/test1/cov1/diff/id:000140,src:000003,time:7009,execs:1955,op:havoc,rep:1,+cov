@@ -1,0 +1,31 @@
+diff id:000139,src:000003,time:6923,execs:1930,op:havoc,rep:1 -> id:000140,src:000003,time:7009,execs:1955,op:havoc,rep:1,+cov
+Src file: /home/tianmai/workspace/bysj/codedoc/mmd.c
+  New 'line' coverage: 1835
+  New 'line' coverage: 1842
+  New 'line' coverage: 1843
+  New 'line' coverage: 1863
+  New 'line' coverage: 1865
+  New 'line' coverage: 1867
+  New 'line' coverage: 1871
+  New 'line' coverage: 1874
+  New 'line' coverage: 1877
+  New 'line' coverage: 1879
+  New 'line' coverage: 1881
+  New 'line' coverage: 1882
+  New 'line' coverage: 1886
+  New 'line' coverage: 1888
+  New 'line' coverage: 1889
+  New 'line' coverage: 1892
+  New 'line' coverage: 1894
+  New 'line' coverage: 1896
+  New 'line' coverage: 1897
+  New 'line' coverage: 1898
+  New 'line' coverage: 1899
+  New 'line' coverage: 1903
+  New 'line' coverage: 1904
+  New 'line' coverage: 1906
+  New 'line' coverage: 1914
+Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
+  New 'line' coverage: 2621
+  New 'line' coverage: 2622
+  New 'line' coverage: 2623

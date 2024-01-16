@@ -1,0 +1,34 @@
+diff id:000040,src:000003,time:1164,execs:343,op:havoc,rep:2,+cov -> id:000041,src:000003,time:1205,execs:353,op:havoc,rep:1
+Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
+  New 'function' coverage: add_variable()
+  New 'line' coverage: 4157
+  New 'line' coverage: 4163
+  New 'line' coverage: 4164
+  New 'line' coverage: 4166
+  New 'line' coverage: 4177
+  New 'line' coverage: 4180
+  New 'line' coverage: 4182
+  New 'line' coverage: 4183
+  New 'line' coverage: 4185
+  New 'line' coverage: 4186
+  New 'line' coverage: 4188
+  New 'line' coverage: 4190
+  New 'line' coverage: 851
+  New 'line' coverage: 855
+  New 'line' coverage: 858
+  New 'line' coverage: 860
+  New 'line' coverage: 861
+  New 'line' coverage: 864
+  New 'line' coverage: 870
+  New 'line' coverage: 877
+  New 'line' coverage: 883
+  New 'line' coverage: 885
+  New 'line' coverage: 887
+  New 'line' coverage: 891
+  New 'line' coverage: 918
+  New 'line' coverage: 920
+  New 'line' coverage: 953
+  New 'line' coverage: 954
+  New 'line' coverage: 961
+  New 'line' coverage: 967
+  New 'line' coverage: 973

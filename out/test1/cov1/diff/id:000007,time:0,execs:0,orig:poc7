@@ -1,0 +1,28 @@
+diff id:000006,time:0,execs:0,orig:poc6 -> id:000007,time:0,execs:0,orig:poc7
+Src file: /home/tianmai/workspace/bysj/codedoc/mmd.c
+  New 'line' coverage: 1460
+  New 'line' coverage: 1461
+  New 'line' coverage: 1481
+  New 'line' coverage: 710
+  New 'line' coverage: 712
+  New 'line' coverage: 714
+  New 'line' coverage: 715
+  New 'line' coverage: 717
+  New 'line' coverage: 720
+  New 'line' coverage: 722
+  New 'line' coverage: 725
+  New 'line' coverage: 727
+  New 'line' coverage: 728
+  New 'line' coverage: 909
+Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
+  New 'line' coverage: 2401
+  New 'line' coverage: 2402
+  New 'line' coverage: 2403
+  New 'line' coverage: 2404
+  New 'line' coverage: 2935
+  New 'line' coverage: 2936
+  New 'line' coverage: 2938
+  New 'line' coverage: 2939
+  New 'line' coverage: 2940
+  New 'line' coverage: 7200
+  New 'line' coverage: 7204

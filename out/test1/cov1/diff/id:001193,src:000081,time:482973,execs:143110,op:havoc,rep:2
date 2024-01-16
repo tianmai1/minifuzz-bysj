@@ -1,0 +1,3 @@
+diff id:001192,src:000081,time:482784,execs:143052,op:havoc,rep:2 -> id:001193,src:000081,time:482973,execs:143110,op:havoc,rep:2
+Src file: /home/tianmai/workspace/bysj/codedoc/mmd.c
+  New 'line' coverage: 949

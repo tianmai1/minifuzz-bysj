@@ -1,0 +1,4 @@
+diff id:000005,time:0,execs:0,orig:poc5 -> id:000006,time:0,execs:0,orig:poc6
+Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
+  New 'line' coverage: 3463
+  New 'line' coverage: 3465

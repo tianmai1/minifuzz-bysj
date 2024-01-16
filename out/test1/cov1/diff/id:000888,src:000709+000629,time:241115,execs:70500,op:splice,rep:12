@@ -1,0 +1,17 @@
+diff id:000887,src:000709+000629,time:241000,execs:70463,op:splice,rep:6 -> id:000888,src:000709+000629,time:241115,execs:70500,op:splice,rep:12
+Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
+  New 'line' coverage: 3246
+  New 'line' coverage: 5697
+  New 'line' coverage: 5699
+  New 'line' coverage: 5700
+  New 'line' coverage: 5701
+  New 'line' coverage: 5703
+  New 'line' coverage: 5704
+  New 'line' coverage: 5705
+  New 'line' coverage: 5712
+  New 'line' coverage: 5717
+  New 'line' coverage: 5719
+  New 'line' coverage: 5721
+  New 'line' coverage: 5723
+  New 'line' coverage: 5724
+  New 'line' coverage: 5727

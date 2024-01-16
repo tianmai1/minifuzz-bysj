@@ -1,0 +1,28 @@
+diff id:000254,src:000003,time:23065,execs:6604,op:havoc,rep:1 -> id:000255,src:000003,time:23169,execs:6632,op:havoc,rep:1
+Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
+  New 'line' coverage: 3232
+  New 'line' coverage: 3234
+  New 'line' coverage: 3252
+  New 'line' coverage: 3518
+  New 'line' coverage: 3540
+  New 'line' coverage: 3542
+  New 'line' coverage: 3544
+  New 'line' coverage: 3545
+  New 'line' coverage: 3547
+  New 'line' coverage: 3552
+  New 'line' coverage: 3554
+  New 'line' coverage: 3555
+  New 'line' coverage: 4825
+  New 'line' coverage: 4827
+  New 'line' coverage: 4833
+  New 'line' coverage: 4836
+  New 'line' coverage: 4837
+  New 'line' coverage: 4839
+  New 'line' coverage: 4841
+  New 'line' coverage: 4843
+  New 'line' coverage: 4844
+  New 'line' coverage: 4846
+  New 'line' coverage: 4848
+  New 'line' coverage: 4850
+  New 'line' coverage: 4853
+  New 'line' coverage: 4855

@@ -1,0 +1,8 @@
+diff id:000301,src:000003,time:39292,execs:11364,op:havoc,rep:1 -> id:000302,src:000003,time:39427,execs:11400,op:havoc,rep:2
+Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
+  New 'line' coverage: 4072
+  New 'line' coverage: 4074
+  New 'line' coverage: 4076
+  New 'line' coverage: 4078
+  New 'line' coverage: 4080
+  New 'line' coverage: 4909

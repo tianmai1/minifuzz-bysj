@@ -1,0 +1,28 @@
+diff id:000000,time:0,execs:0,orig:poc -> id:000001,time:0,execs:0,orig:poc1
+Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
+  New 'line' coverage: 1369
+  New 'line' coverage: 2899
+  New 'line' coverage: 2901
+  New 'line' coverage: 2903
+  New 'line' coverage: 2904
+  New 'line' coverage: 2908
+  New 'line' coverage: 2910
+  New 'line' coverage: 2912
+  New 'line' coverage: 2914
+  New 'line' coverage: 2915
+  New 'line' coverage: 3755
+  New 'line' coverage: 3756
+  New 'line' coverage: 3758
+  New 'line' coverage: 3774
+  New 'line' coverage: 3776
+  New 'line' coverage: 3778
+  New 'line' coverage: 3780
+  New 'line' coverage: 3786
+  New 'line' coverage: 3789
+  New 'line' coverage: 3811
+  New 'line' coverage: 3813
+  New 'line' coverage: 3823
+  New 'line' coverage: 3825
+  New 'line' coverage: 3827
+  New 'line' coverage: 3828
+  New 'line' coverage: 3901

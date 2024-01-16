@@ -1,0 +1,3 @@
+diff id:000740,src:000437+000347,time:186532,execs:54093,op:splice,rep:3 -> id:000741,src:000437+000347,time:186566,execs:54101,op:splice,rep:6
+Src file: /home/tianmai/workspace/bysj/codedoc/mmd.c
+  New 'line' coverage: 910
