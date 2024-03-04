@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>analyse_plus</class>
+ <widget class="QWidget" name="analyse_plus">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>analyse_plus</string>
+  </property>
+  <widget class="QLabel" name="test_name">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>81</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>crash目录:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="show_txt_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>101</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置进程数:</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="input_num">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>80</y>
+     <width>111</width>
+     <height>35</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="show_txt_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>51</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>类型:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="input_analyse">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>120</y>
+     <width>151</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {&quot;
+                                    &quot;combobox-popup: 0;\n&quot;  
+                                    &quot;font-size:15px; &quot;
+                                    &quot;color: #6effe8;\n&quot;
+                                    &quot;line-height:24px; &quot;}
+</string>
+   </property>
+   <property name="maxVisibleItems">
+    <number>3</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>崩溃分析</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>超时分析</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>160</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>45</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="show_txt_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>51</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>命令:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
