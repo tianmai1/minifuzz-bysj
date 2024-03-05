@@ -43,7 +43,7 @@ class newPage(QWidget, Ui_new_2):
         super().__init__()
         self.setupUi(self)
     
-    def back_button_c(self):
+    def back_button_clicked(self):
         main_window.switch(0)
 
 class showPage(QWidget, Ui_show):

@@ -56,7 +56,7 @@ class Ui_analyse(object):
         self.input_num.setGeometry(QtCore.QRect(130, 50, 111, 35))
         self.input_num.setObjectName("input_num")
         self.input_num.setMinimum(1)
-        self.input_num.setMaximum(32)
+        self.input_num.setMaximum(20)
         self.input_num.setSingleStep(2)
         self.input_num.setStyleSheet("color: #6effe8;")
         default_value = 4

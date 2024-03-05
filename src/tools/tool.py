@@ -244,7 +244,7 @@ def get_files_with_id_prefix(cmd:str, folder_path, id_prefix):
             command.append(cmd.replace("@@",new_file_path))
     return command
 
-def run_process(cmd: list,crash_analyzed_path: str,is_crash: bool,num:int):
+def run_process(cmd: list,crash_analyzed_path: str,is_crash: bool = True , num: int=4):
     try:
         pool = multiprocessing.Pool(processes=num)
         if is_crash:
