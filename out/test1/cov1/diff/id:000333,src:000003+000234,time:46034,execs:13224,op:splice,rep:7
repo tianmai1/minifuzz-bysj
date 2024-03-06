@@ -1,4 +1,0 @@
-diff id:000332,src:000003+000234,time:45994,execs:13212,op:splice,rep:8 -> id:000333,src:000003+000234,time:46034,execs:13224,op:splice,rep:7
-Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
-  New 'line' coverage: 4851
-  New 'line' coverage: 6109

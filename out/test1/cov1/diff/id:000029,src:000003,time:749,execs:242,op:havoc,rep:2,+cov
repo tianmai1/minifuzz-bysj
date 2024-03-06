@@ -1,6 +1,0 @@
-diff id:000028,src:000003,time:713,execs:233,op:havoc,rep:2,+cov -> id:000029,src:000003,time:749,execs:242,op:havoc,rep:2,+cov
-Src file: /home/tianmai/workspace/bysj/codedoc/mmd.c
-  New 'line' coverage: 1469
-Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
-  New 'line' coverage: 3221
-  New 'line' coverage: 3223

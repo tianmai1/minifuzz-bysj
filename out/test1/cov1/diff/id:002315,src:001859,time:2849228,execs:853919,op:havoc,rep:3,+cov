@@ -1,7 +1,0 @@
-diff id:002314,src:001859,time:2844263,execs:852387,op:havoc,rep:2 -> id:002315,src:001859,time:2849228,execs:853919,op:havoc,rep:3,+cov
-Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
-  New 'line' coverage: 2473
-  New 'line' coverage: 2474
-  New 'line' coverage: 2475
-  New 'line' coverage: 2476
-  New 'line' coverage: 2510

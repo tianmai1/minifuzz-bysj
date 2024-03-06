@@ -1,9 +1,0 @@
-diff id:002009,src:001914,time:1818488,execs:545067,op:havoc,rep:2 -> id:002010,src:001983+001596,time:1827755,execs:547862,op:splice,rep:1,+cov
-Src file: /home/tianmai/workspace/bysj/codedoc/codedoc.c
-  New 'line' coverage: 935
-  New 'line' coverage: 937
-  New 'line' coverage: 938
-  New 'line' coverage: 940
-  New 'line' coverage: 942
-  New 'line' coverage: 943
-  New 'line' coverage: 944

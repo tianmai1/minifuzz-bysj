@@ -1,3 +1,0 @@
-afl_cov_pid     : 1100521
-afl_cov_version : 0.6.2
-command_line    : ../cov/afl-cov -d ../out/test/ --coverage-cmd ./codedoc AFL_FILE -c . --enable-branch-coverage --overwrit
