@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/tianmai/workspace/bysj_plus/ui/analyse.ui'
+# Form implementation generated from reading ui file '/home/tianmai/workspace/bysj_plus/minifuzz-bysj/ui/analyse.ui'
 #
 # Created by: PyQt5 UI code generator 5.14.1
 #
@@ -52,14 +52,17 @@ class Ui_analyse(object):
         self.input_analyse.addItem("")
         self.input_analyse.addItem("")
         self.pushButton_2 = QtWidgets.QPushButton(analyse)
-        self.pushButton_2.setGeometry(QtCore.QRect(160, 150, 71, 30))
+        self.pushButton_2.setGeometry(QtCore.QRect(180, 150, 61, 30))
         self.pushButton_2.setObjectName("pushButton_2")
         self.label = QtWidgets.QLabel(analyse)
-        self.label.setGeometry(QtCore.QRect(10, 100, 111, 111))
+        self.label.setGeometry(QtCore.QRect(-5, 100, 111, 111))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("/home/tianmai/workspace/bysj_plus/ui/../images/兴奋.png"))
+        self.label.setPixmap(QtGui.QPixmap("/home/tianmai/workspace/bysj_plus/minifuzz-bysj/ui/../src/tools/images/兴奋.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
+        self.pushButton_3 = QtWidgets.QPushButton(analyse)
+        self.pushButton_3.setGeometry(QtCore.QRect(110, 150, 61, 30))
+        self.pushButton_3.setObjectName("pushButton_3")
 
         self.retranslateUi(analyse)
         QtCore.QMetaObject.connectSlotsByName(analyse)
@@ -76,3 +79,4 @@ class Ui_analyse(object):
         self.input_analyse.setItemText(0, _translate("analyse", "崩溃分析"))
         self.input_analyse.setItemText(1, _translate("analyse", "超时分析"))
         self.pushButton_2.setText(_translate("analyse", "确认"))
+        self.pushButton_3.setText(_translate("analyse", "高级"))

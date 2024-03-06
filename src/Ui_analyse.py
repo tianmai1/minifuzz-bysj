@@ -1,16 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import os
-import shutil
-import subprocess
-from time import sleep
-import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import Qt, QRegExp
-from PyQt5.QtGui import QIcon, QPixmap,QRegExpValidator
-import psutil
 import tools.tool as tool
-from qt_material import apply_stylesheet
-import webbrowser
 from Ui_fuzz  import _info
 
 bysj_path=os.path.dirname(os.path.abspath(__file__))
@@ -94,14 +84,17 @@ class Ui_analyse(object):
         self.input_analyse.addItem("")
         self.input_analyse.addItem("")
         self.pushButton_2 = QtWidgets.QPushButton(analyse)
-        self.pushButton_2.setGeometry(QtCore.QRect(160, 150, 71, 30))
+        self.pushButton_2.setGeometry(QtCore.QRect(180, 150, 61, 30))
         self.pushButton_2.setObjectName("pushButton_2")
         self.label = QtWidgets.QLabel(analyse)
-        self.label.setGeometry(QtCore.QRect(10, 100, 111, 111))
+        self.label.setGeometry(QtCore.QRect(-5, 100, 111, 111))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap(bysj_path+"/tools/images/兴奋.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
+        self.pushButton_3 = QtWidgets.QPushButton(analyse)
+        self.pushButton_3.setGeometry(QtCore.QRect(110, 150, 61, 30))
+        self.pushButton_3.setObjectName("analyse_plus")
 
         self.retranslateUi(analyse)
         QtCore.QMetaObject.connectSlotsByName(analyse)
@@ -119,6 +112,11 @@ class Ui_analyse(object):
         self.input_analyse.setItemText(1, _translate("analyse", "超时分析"))
         self.pushButton_2.setText(_translate("analyse", "确认"))
         self.pushButton_2.clicked.connect(self.pushButton_clicked)
+        self.pushButton_3.setText(_translate("analyse", "高级"))
+        self.pushButton_3.clicked.connect(self.analyse_plus_clicked)
+
+    def analyse_plus_clicked(self):
+        pass
 
     def pushButton_clicked(self):
         name=self.input_name.currentText()

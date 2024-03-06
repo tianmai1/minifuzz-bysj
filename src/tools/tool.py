@@ -36,6 +36,15 @@ def get_name(directory='out'):
             directory_names.append(item)
     return directory_names
 
+def get_file_name(directory='out'):
+    os.makedirs(directory, exist_ok=True)
+    directory_names = []
+    for item in os.listdir(directory):
+        item_path = os.path.join(directory, item)
+        if not os.path.isdir(item_path):
+            directory_names.append(item)
+    return directory_names
+
 def get_md(directory):
     directory_names = []
     for item in os.listdir(directory):
@@ -303,6 +312,9 @@ def crash_run_analyzed(cmd: str,crash_analyzed_path:str):
                 Description=exploitable.split("Description: ")[1].split("\n")[0]
                 name=hash+"."+Description
                 #print(name)
+            elif "No stack" in bt:
+                print(f"[-]分析失败\n{cmd}错误原因: No stack\n")
+                return
             else:
                 name="未知"
             log+="崩溃点汇编:\n```\n"

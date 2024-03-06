@@ -85,10 +85,6 @@ class Ui_fuzz(object):
         # layout.setAlignment(Qt.AlignTop)
         self.setLayout(layout)
 
-
-    
-        # main_window.switch_page(4)
-
     def new_fuzz_page(self):
         pass
     

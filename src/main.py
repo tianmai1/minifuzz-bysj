@@ -18,7 +18,7 @@ from Ui_new import Ui_new_2
 from Ui_show import Ui_show
 from Ui_analyse import Ui_analyse
 from Ui_result import Ui_result
-
+from Ui_analyse_plus import Ui_analyse_plus
 
 
 
@@ -68,6 +68,17 @@ class analysePage(QWidget, Ui_analyse):
         super().__init__()
         self.setupUi(self)
 
+    def analyse_plus_clicked(self):
+        main_window.switch(5)
+
+class analyse_plusPage(QWidget, Ui_analyse_plus):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+
+    def back_button_clicked(self):
+        main_window.switch(3)
+
 class resultPage(QWidget, Ui_result):
     def __init__(self):
         super().__init__()
@@ -93,6 +104,7 @@ class MainWidget(QWidget, Ui_minifuzz):
         self.new_page = newPage()
         self.show_page = showPage()
         self.analyse_page = analysePage()
+        self.analyse_plus_page = analyse_plusPage()
         self.result_page = resultPage()
         
         self.qsl.addWidget(self.fuzz_page)
@@ -100,6 +112,7 @@ class MainWidget(QWidget, Ui_minifuzz):
         self.qsl.addWidget(self.show_page)
         self.qsl.addWidget(self.analyse_page)
         self.qsl.addWidget(self.result_page)
+        self.qsl.addWidget(self.analyse_plus_page)
         self.controller()
 
     def controller(self):
@@ -116,6 +129,7 @@ class MainWidget(QWidget, Ui_minifuzz):
             "fuzz": 0,
             "show1": 2,
             "analyse": 3,
+            "analyse_plus": 5,
         }
         # print(ind)
         if ind==1:

@@ -132,9 +132,9 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>180</x>
      <y>150</y>
-     <width>71</width>
+     <width>61</width>
      <height>30</height>
     </rect>
    </property>
@@ -145,7 +145,7 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>-5</x>
      <y>100</y>
      <width>111</width>
      <height>111</height>
@@ -155,10 +155,23 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../images/兴奋.png</pixmap>
+    <pixmap>../src/tools/images/兴奋.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>150</y>
+     <width>61</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>高级</string>
    </property>
   </widget>
  </widget>

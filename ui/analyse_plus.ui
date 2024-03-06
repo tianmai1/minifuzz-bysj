@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>analyse_plus</string>
   </property>
-  <widget class="QLabel" name="test_name">
+  <widget class="QLabel" name="in_path">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -26,36 +26,26 @@
     <string>crash目录:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="show_txt_2">
+  <widget class="QLabel" name="out_path">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>80</y>
-     <width>101</width>
-     <height>35</height>
+     <width>71</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="text">
-    <string>设置进程数:</string>
-   </property>
-  </widget>
-  <widget class="QSpinBox" name="input_num">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>80</y>
-     <width>111</width>
-     <height>35</height>
-    </rect>
+    <string>输出目录：</string>
    </property>
   </widget>
   <widget class="QLabel" name="show_txt_3">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>120</y>
+     <y>115</y>
      <width>51</width>
-     <height>35</height>
+     <height>30</height>
     </rect>
    </property>
    <property name="text">
@@ -66,7 +56,7 @@
    <property name="geometry">
     <rect>
      <x>90</x>
-     <y>120</y>
+     <y>115</y>
      <width>151</width>
      <height>35</height>
     </rect>
@@ -96,17 +86,17 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>170</x>
      <y>160</y>
      <width>71</width>
      <height>30</height>
     </rect>
    </property>
    <property name="text">
-    <string>确认</string>
+    <string>返回</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="in_path_input">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -116,7 +106,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="cmd_input">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -126,17 +116,40 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="show_txt_4">
+  <widget class="QLabel" name="cmd">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>40</y>
-     <width>51</width>
-     <height>35</height>
+     <y>45</y>
+     <width>81</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="text">
-    <string>命令:</string>
+    <string>运行命令：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="out_path_input">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>80</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>160</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认</string>
    </property>
   </widget>
  </widget>
