@@ -179,8 +179,14 @@ def _info(title, text):
         tishi.setText("<font color='#00FF00'>"+text+"</font>")
     else:
         tishi.setText("<font color='#FFA500'>"+text+"</font>")
-    tishi.setIcon(QMessageBox.Information)
+    
     tishi.setWindowTitle(title)
-    tishi.addButton(button, QMessageBox.AcceptRole)
+    # tishi.addButton(button, QMessageBox.AcceptRole)
+    if len(text)<50:
+        tishi.setIcon(QMessageBox.Information)
+    # 设置消息框的按钮
+    tishi.setStandardButtons(QMessageBox.Ok)
+    # 设置消息框的默认按钮
+    tishi.setDefaultButton(QMessageBox.Ok)
     tishi.exec_()
     return

@@ -83,7 +83,7 @@ class Ui_new_2(object):
 
     def get_text(self,name):
         self.text=name
-        # print(self.text)
+
 
     def start_button_clicked(self):
         src = self.input_name.text()

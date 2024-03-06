@@ -6,6 +6,7 @@ import multiprocessing
 from time import sleep
 import tools.hangs as hangs
 import re
+from ansi2html import Ansi2HTMLConverter
 from colormath.color_objects import sRGBColor
 from colormath.color_conversions import convert_color
 import psutil
@@ -79,43 +80,10 @@ def get_pid1(name, cmd):
 
 def get_afl_info(cmd):
     result = proc(cmd)
-    result = convert_python_colors_to_html(result)
-    return result
-
-def convert_python_colors_to_html(text):
-    """
-    将带有Python颜色标记的文本转换为带有HTML颜色标记的文本
-    :param text: 带有Python颜色标记的文本，如'\033[91mHello\033[0m'
-    :return: 带有HTML颜色标记的文本，如'<span style="color: #ff0000;">Hello</span>'
-    """
-    color_regex = re.compile(r'\033\[\d+;+\d+m')  # 匹配Python颜色标记的正则表达式
-
-    html_text = ''
-    last_end = 0
-
-    for match in color_regex.finditer(text):
-        start = match.start()
-        end = match.end()
-
-        color_tag = text[start:end]
-        color_code = re.search(r'\[\d+;(\d+)m', color_tag).group(1)
-        print(color_code)
-        html_text += text[last_end:start]  # 添加颜色标记前的文本
-
-        if color_code.isdigit():
-            rgb_color = sRGBColor(int(color_code), int(color_code), int(color_code))  # 灰度颜色
-        else:
-            rgb_color = sRGBColor(*map(int, color_code.split(';')))  # RGB颜色
-
-        html_color = convert_color(rgb_color, sRGBColor).get_rgb_hex()
-        html_text += '<span style="color: {};">'.format(html_color)  # 添加HTML颜色标记的开标签
-
-        last_end = end
-
-    html_text += text[last_end:]  # 添加剩余的文本
-    html_text += '</span>'  # 添加HTML颜色标记的闭标签
-
-    return html_text
+    print(result)
+    conv=Ansi2HTMLConverter()
+    html = conv.convert(result)
+    return html
 
 def cmd(command, size="81"):
     subprocess.call("gnome-terminal --geometry="+size+"x26 -- bash -c \""+command+"\"",
