@@ -33,7 +33,7 @@ def get_name(directory='out'):
     directory_names = []
     for item in os.listdir(directory):
         item_path = os.path.join(directory, item)
-        if os.path.isdir(item_path):
+        if os.path.isdir(item_path) and os.path.exists(os.path.join(item_path,".minifuzz_dir")):
             directory_names.append(item)
     return directory_names
 
@@ -141,6 +141,9 @@ def run(name, program, testcase, coverage_enabled, src, isfirst=True):
     # error_info=get_afl_info(afl_cmd_list)
     cmd(command, size)
     sleep(1)
+    if os.path.exists('out/'+name):
+        with open('out/'+name+'/.minifuzz_dir', 'w') as file:
+            file.write("这是minifuzz目录")
     if isfirst:
         afl_pid = get_pid1(name, afl_cmd)
         # print(afl_pid)

@@ -136,7 +136,7 @@ class Ui_fuzz(object):
                     return
                 # print (afl_pid)
                 try:
-                    subprocess.run(['kill', '-9', str(afl_pid)])
+                    subprocess.run(['kill', str(afl_pid)])
                 except Exception as e:
                     print(e)
                     return

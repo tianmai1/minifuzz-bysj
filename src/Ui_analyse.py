@@ -84,7 +84,7 @@ class Ui_analyse(object):
         self.input_analyse.addItem("")
         self.input_analyse.addItem("")
         self.pushButton_2 = QtWidgets.QPushButton(analyse)
-        self.pushButton_2.setGeometry(QtCore.QRect(180, 150, 61, 30))
+        self.pushButton_2.setGeometry(QtCore.QRect(110, 150, 61, 30))
         self.pushButton_2.setObjectName("pushButton_2")
         self.label = QtWidgets.QLabel(analyse)
         self.label.setGeometry(QtCore.QRect(-5, 100, 111, 111))
@@ -93,7 +93,7 @@ class Ui_analyse(object):
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.pushButton_3 = QtWidgets.QPushButton(analyse)
-        self.pushButton_3.setGeometry(QtCore.QRect(110, 150, 61, 30))
+        self.pushButton_3.setGeometry(QtCore.QRect(180, 150, 61, 30))
         self.pushButton_3.setObjectName("analyse_plus")
 
         self.retranslateUi(analyse)
