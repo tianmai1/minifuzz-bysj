@@ -36,7 +36,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>设置进程数:</string>
+    <string>设置线程数:</string>
    </property>
   </widget>
   <widget class="QComboBox" name="input_name">

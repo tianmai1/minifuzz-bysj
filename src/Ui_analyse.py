@@ -46,7 +46,7 @@ class Ui_analyse(object):
         self.input_num.setGeometry(QtCore.QRect(130, 50, 111, 35))
         self.input_num.setObjectName("input_num")
         self.input_num.setMinimum(1)
-        self.input_num.setMaximum(20)
+        self.input_num.setMaximum(32)
         self.input_num.setSingleStep(2)
         self.input_num.setStyleSheet("color: #6effe8;")
         default_value = 4
@@ -103,7 +103,7 @@ class Ui_analyse(object):
         _translate = QtCore.QCoreApplication.translate
         analyse.setWindowTitle(_translate("analyse", "analyse"))
         self.test_name.setText(_translate("analyse", "测试名称："))
-        self.show_txt_2.setText(_translate("analyse", "设置进程数:"))
+        self.show_txt_2.setText(_translate("analyse", "设置线程数:"))
         self.input_name.setItemText(0, _translate("analyse", "新建项目"))
         self.input_name.setItemText(1, _translate("analyse", "新建项目"))
         self.input_name.setItemText(2, _translate("analyse", "新建项目"))

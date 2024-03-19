@@ -114,7 +114,7 @@ class Ui_analyse_plus(object):
                 command.append(cmd.replace("@@",os.path.join(in_path, in_file)))
             if self.input_analyse.currentText()=="崩溃分析":
                 is_crash=True
-            is_ok,e=tool.run_process(command,out_path,is_crash)
+            is_ok,e=tool.run_thread(command,out_path,is_crash)
             if is_ok:
                 _info("成功","分析结束!")
             else:

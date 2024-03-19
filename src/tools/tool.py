@@ -10,6 +10,8 @@ from ansi2html import Ansi2HTMLConverter
 from colormath.color_objects import sRGBColor
 from colormath.color_conversions import convert_color
 import psutil
+import concurrent.futures
+import functools
 
 tools_path=os.path.dirname(os.path.abspath(__file__))
 current_dir = os.getcwd()
@@ -195,7 +197,7 @@ def crash_analyzed(name,num,default="crashes"):
             is_crash=True
         else :
             command = get_files_with_id_prefix(cmd, new_crashes_path, "hang_")
-        is_ok,e=run_process(command,crash_analyzed_path,is_crash,num)
+        is_ok,e=run_thread(command,crash_analyzed_path,is_crash,num)
         if is_ok:
             return "成功",(f"测试{name} {default}分析结束!")
         else:
@@ -233,6 +235,19 @@ def run_process(cmd: list,crash_analyzed_path: str,is_crash: bool = True , num: 
             pool.starmap(hangs_run_analyzed, [(item, crash_analyzed_path) for item in cmd])
         pool.close()
         pool.join()
+        print("分析完成!")
+        return True,''
+    except Exception as e:
+        return False,e
+
+def run_thread(cmd: list,crash_analyzed_path: str,is_crash: bool = True , num: int=4):
+    if is_crash:
+        partial_task = functools.partial(crash_run_analyzed, crash_analyzed_path=crash_analyzed_path)
+    else:
+        partial_task = functools.partial(hangs_run_analyzed, crash_analyzed_path=crash_analyzed_path)
+    try:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=num) as executor:
+            futures = [executor.submit(partial_task, item) for item in cmd]    
         print("分析完成!")
         return True,''
     except Exception as e:
