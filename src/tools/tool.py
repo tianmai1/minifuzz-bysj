@@ -252,7 +252,7 @@ def crash_run_analyzed(cmd: str,crash_analyzed_path:str):
                "--args"]+_cmd
     #print(command)
     try:
-        out = subprocess.run(command,capture_output=True, text=True).stdout
+        out = subprocess.run(command,timeout=3,capture_output=True, text=True).stdout
         bt=out.split("----bt----\n",1)[1].split("\n----exploitable----",1)[0]
         exploitable=out.split("----exploitable----\n",1)[1].split("\n----asm----",1)[0]
         asm=out.split("----asm----\n",1)[1].split("\n----code----",1)[0]
@@ -299,9 +299,10 @@ def crash_run_analyzed(cmd: str,crash_analyzed_path:str):
             print("分析成功"+cmd+"[+]新缺陷: "+name+"\n保存目录: "+crash_analyzed_path+"\n")
         else:
             print("分析成功"+cmd+"[.]重复缺陷: "+name+"\n")
-        
+    except subprocess.TimeoutExpired:
+        print("[-]分析超时\ngdb命令: "+(' ').join(command)+"\n")
     except Exception as e:
-        print(f"[-]分析失败\n{cmd}错误原因: {e}\n")
+        print(f"[-]分析失败\ngdb命令: {(' ').join(command)}\n错误原因: {e}\n")
         pass
 
 def find_loop(data):
