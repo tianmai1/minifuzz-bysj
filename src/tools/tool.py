@@ -242,6 +242,10 @@ def crash_run_analyzed(cmd: str,crash_analyzed_path:str):
     _cmd = cmd.split()
     print(f"[*]开始分析{cmd}")
     command = ["gdb",
+               "-x",os.path.join(tools_path,"btpp.py"),
+               "-x",os.path.join(tools_path,"exploitable/exploitable/exploitable.py"),
+               "-ex","set pagination off",
+               "-ex","set confirm off",
                "-ex", "run",
                "-ex","echo ----bt----\\n",
                "-ex", "btpp -100",
