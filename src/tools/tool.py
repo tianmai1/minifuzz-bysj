@@ -252,7 +252,7 @@ def crash_run_analyzed(cmd: str,crash_analyzed_path:str):
                "--args"]+_cmd
     #print(command)
     try:
-        out = subprocess.run(command,timeout=3,capture_output=True, text=True).stdout
+        out = subprocess.run(command,timeout=5,capture_output=True, text=True).stdout
         bt=out.split("----bt----\n",1)[1].split("\n----exploitable----",1)[0]
         exploitable=out.split("----exploitable----\n",1)[1].split("\n----asm----",1)[0]
         asm=out.split("----asm----\n",1)[1].split("\n----code----",1)[0]
