@@ -4,7 +4,7 @@ import tools.tool as tool
 from Ui_fuzz  import _info
 
 
-
+current_dir = os.getcwd()
 class Ui_analyse_plus(object):
     def setupUi(self, analyse_plus):
         analyse_plus.setObjectName("analyse_plus")
@@ -48,26 +48,36 @@ class Ui_analyse_plus(object):
         self.input_analyse.addItem("")
         self.input_analyse.addItem("")
         self.pushButton_2 = QtWidgets.QPushButton(analyse_plus)
-        self.pushButton_2.setGeometry(QtCore.QRect(170, 160, 71, 30))
+        self.pushButton_2.setGeometry(QtCore.QRect(130, 160, 60, 30))
         self.pushButton_2.setObjectName("analyse")
         self.in_path_input = QtWidgets.QLineEdit(analyse_plus)
-        self.in_path_input.setGeometry(QtCore.QRect(90, 10, 151, 30))
+        self.in_path_input.setGeometry(QtCore.QRect(80, 10, 141, 30))
         self.in_path_input.setObjectName("in_path_input")
-        self.in_path_input.setStyleSheet("font-size: 15px; color: #6effe8;")
         self.cmd_input = QtWidgets.QLineEdit(analyse_plus)
-        self.cmd_input.setGeometry(QtCore.QRect(90, 45, 151, 30))
+        self.cmd_input.setGeometry(QtCore.QRect(80, 45, 141, 30))
         self.cmd_input.setObjectName("cmd_input")
-        self.cmd_input.setStyleSheet("font-size: 15px; color: #6effe8;")
         self.cmd = QtWidgets.QLabel(analyse_plus)
         self.cmd.setGeometry(QtCore.QRect(10, 45, 81, 30))
         self.cmd.setObjectName("cmd")
         self.out_path_input = QtWidgets.QLineEdit(analyse_plus)
-        self.out_path_input.setGeometry(QtCore.QRect(90, 80, 151, 30))
+        self.out_path_input.setGeometry(QtCore.QRect(80, 80, 141, 30))
         self.out_path_input.setObjectName("out_path_input")
-        self.out_path_input.setStyleSheet("font-size: 15px; color: #6effe8;")
         self.pushButton_3 = QtWidgets.QPushButton(analyse_plus)
-        self.pushButton_3.setGeometry(QtCore.QRect(80, 160, 71, 30))
+        self.pushButton_3.setGeometry(QtCore.QRect(60, 160, 60, 30))
         self.pushButton_3.setObjectName("pushButton_3")
+        self.crash_path_button = QtWidgets.QToolButton(analyse_plus)
+        self.crash_path_button.setGeometry(QtCore.QRect(220, 15, 26, 24))
+        self.crash_path_button.setObjectName("crash_path_button")
+        self.out_path_button = QtWidgets.QToolButton(analyse_plus)
+        self.out_path_button.setGeometry(QtCore.QRect(220, 85, 26, 24))
+        self.out_path_button.setObjectName("out_path_button")
+        self.program_path_button = QtWidgets.QToolButton(analyse_plus)
+        self.program_path_button.setGeometry(QtCore.QRect(220, 50, 26, 24))
+        self.program_path_button.setObjectName("program_path_button")
+
+        self.in_path_input.setStyleSheet("font-size: 15px; color: #6effe8;")
+        self.cmd_input.setStyleSheet("font-size: 15px; color: #6effe8;")
+        self.out_path_input.setStyleSheet("font-size: 15px; color: #6effe8;")
 
         self.retranslateUi(analyse_plus)
         QtCore.QMetaObject.connectSlotsByName(analyse_plus)
@@ -75,7 +85,7 @@ class Ui_analyse_plus(object):
     def retranslateUi(self, analyse_plus):
         _translate = QtCore.QCoreApplication.translate
         analyse_plus.setWindowTitle(_translate("analyse_plus", "analyse_plus"))
-        self.in_path.setText(_translate("analyse_plus", "crash目录:"))
+        self.in_path.setText(_translate("analyse_plus", "crash目录："))
         self.out_path.setText(_translate("analyse_plus", "输出目录："))
         self.show_txt_3.setText(_translate("analyse_plus", "类型:"))
         self.input_analyse.setItemText(0, _translate("analyse_plus", "崩溃分析"))
@@ -85,6 +95,24 @@ class Ui_analyse_plus(object):
         self.cmd.setText(_translate("analyse_plus", "运行命令："))
         self.pushButton_3.setText(_translate("analyse_plus", "确认"))
         self.pushButton_3.clicked.connect(self.button3_clicked)
+        self.crash_path_button.setText(_translate("analyse_plus", "📂"))
+        self.out_path_button.setText(_translate("analyse_plus", "📂"))
+        self.program_path_button.setText(_translate("analyse_plus", "📂"))
+        self.crash_path_button.clicked.connect(self.msg_crash)
+        self.out_path_button.clicked.connect(self.msg_out)
+        self.program_path_button.clicked.connect(self.msg_program)
+
+    def msg_crash(self,Filepath):
+        m = QtWidgets.QFileDialog.getExistingDirectory(None,"测试用例文件夹",current_dir)
+        self.in_path_input.setText(m)
+
+    def msg_out(self,Filepath):
+        m = QtWidgets.QFileDialog.getExistingDirectory(None,"源码文件夹",current_dir)
+        self.out_path_input.setText(m)
+
+    def msg_program(self,Filepath):
+        m = QtWidgets.QFileDialog.getOpenFileName(None,  "目标文件","./")
+        self.cmd_input.setText(m[0])   
 
     def back_button_clicked(self):
         pass

@@ -14,7 +14,7 @@ bysj_path=os.path.dirname(os.path.abspath(__file__))
 class Ui_minifuzz(object):
     def setupUi(self, minifuzz):
         minifuzz.setObjectName("minifuzz")
-        minifuzz.resize(329, 200)
+        minifuzz.resize(324, 200)
         font = QtGui.QFont()
         font.setKerning(True)
         minifuzz.setFont(font)
