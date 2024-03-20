@@ -142,34 +142,45 @@ def infopp_fx(addr:int,is_args:bool=False):
     codes=[]
     pc_line=''
     try:
-        gdb.execute("set disassembly-flavor intel",to_string=True)
-        asm_end=gdb.execute("x/4i "+address,to_string=True).splitlines()
-        asm_head=gdb.execute("x/-5i "+address,to_string=True).splitlines()
-        #print (asm_end)
-        if "=>" not in asm_end[0]:
-            if not is_args:
-                addr=int(asm_head[-1].split()[0],16)
-                asm_head[-1]="=> "+asm_head[-1][3:]
-            else:
-                # asm_end[0]="=> "+asm_end[0][3:]
-                addr=int(asm_head[-1].split()[0],16)
-                asm_head[-1]="=> "+asm_head[-1][3:]
-        else:
-            addr=int(asm_end[0].split()[1],16)
-        asm=asm_head+asm_end
-        for j in range (len(asm)):
-            asm[j]=asm[j].lower()
+        gdb.execute("set disassembly-flavor intel",to_string=True)        
+        _asm=gdb.execute("disassemble "+hex(addr),to_string=True).splitlines()     
+        if len(_asm)>2:
+            for i,value in enumerate(_asm[1:-1]):
+                i+=1
+                if not is_args:
+                    if '=>' in value :
+                        asm=_asm[max(i-5,1):min(len(_asm)-1,i+6)]
+                        break
+                    if addr==int(value.split()[0],16):
+                        addr=int(_asm[max(1,i-1)].split()[0],16)
+                        _asm[max(1,i-1)]='=> '+_asm[max(1,i-1)][3:]
+                        asm=_asm[max(i-6,1):min(len(_asm)-1,i+5)]
+                        break
+                else :
+                    if '=>' in value:
+                        value='   '+value[3:]
+                        _asm[i]='   '+_asm[i][3:]
+                    if addr==int(value.split()[0],16):
+                        _asm[i]='=> '+_asm[i][3:]
+                        for j in range (len(_asm[i+1:min(len(_asm)-1,i+6)])):
+                            _asm[j+i+1]='   '+_asm[j+i+1][3:]
+                        asm=_asm[max(i-5,1):min(len(_asm)-1,i+6)]
+                        break
 
         pc_line=str(gdb.find_pc_line(addr))
-        pc_line=pc_line.replace('symbol and line for ','').replace(', line ',':')
-        #print(pc_line)
-        code=gdb.execute("list "+pc_line,to_string=True)
-        codes=code.splitlines()
-        line=pc_line.split(":")[1]
-        for j in range(len(codes)):
-            if codes[j].startswith(line):
-                codes[j]=codes[j]+'   <-<'
-                break
+        # print(pc_lines)
+        if '<unknown>' not in pc_line:
+            pc_lines=pc_line.replace('symbol and line for ','').replace(', line ',':')
+            code=gdb.execute("list "+pc_lines,to_string=True)
+            codes=code.splitlines()
+            print(codes)
+            if len(codes)>2:
+                line=pc_lines.split(":")[1]
+                for j in range(len(codes)):
+                    if codes[j].startswith(line):
+                        codes[j]=codes[j]+'   <-<'
+        else:
+            pc_line=''
     except Exception as e:
         print(e)
     #return asm,codes
