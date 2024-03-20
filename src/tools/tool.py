@@ -124,7 +124,7 @@ def run(name, program, testcase, coverage_enabled, src, isfirst=True):
         if not is_cov:
             return("编译时请加上'-fprofile-arcs -ftest-coverage'")
         size = '162'
-        cov_cmd = [tools_path+"/cov/afl-cov", "-d", 'out/'+name, "--live","--lcov-web-all","--sleep", "2",
+        cov_cmd = [tools_path+"/cov/afl-cov", "-d", 'out/'+name, "--live","--sleep", "2","--lcov-web-all",
                    "--coverage-cmd=\'"+program.replace("@@", "AFL_FILE")+"\'",
                    "--code-dir="+src]
         if is_clang:

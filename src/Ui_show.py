@@ -118,7 +118,7 @@ class Ui_show(object):
         cov_path='out/'+name+"/cov"
         if name in test_list:
             command = "tmux at -t "+name
-            size = '81'
+            size = '162'
             if not os.path.exists(index) and os.path.exists(cov_path):
                 size = '162'
             tool.cmd(command, size)
