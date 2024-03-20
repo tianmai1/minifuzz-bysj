@@ -118,15 +118,17 @@ def run(name, program, testcase, coverage_enabled, src, isfirst=True):
     os.makedirs("out",exist_ok=True)
     # if os.path.exists('out/'+name):
     #     shutil.rmtree('out/'+name)
-    is_cov,is_chazhuang=file_analyzed(target)
+    is_cov,is_chazhuang,is_clang=file_analyzed(target)
     
     if coverage_enabled :
         if not is_cov:
             return("编译时请加上'-fprofile-arcs -ftest-coverage'")
         size = '162'
-        cov_cmd = [tools_path+"/cov/afl-cov", "-d", 'out/'+name, "--live", "--sleep", "2",
+        cov_cmd = [tools_path+"/cov/afl-cov", "-d", 'out/'+name, "--live","--lcov-web-all","--sleep", "2",
                    "--coverage-cmd=\'"+program.replace("@@", "AFL_FILE")+"\'",
                    "--code-dir="+src]
+        if is_clang:
+            cov_cmd+=["--clang"]
         afl_cov = " \\\""+(" ").join(cov_cmd)+"\\\" \; split-window -h"
         print ("cov_cmd: "+(" ").join(cov_cmd))
     afl_cmd_list = [tools_path+'/fuzz/afl-fuzz','-i',
@@ -164,13 +166,16 @@ def run(name, program, testcase, coverage_enabled, src, isfirst=True):
 def file_analyzed(program):
     is_cov=False
     is_chazhuang=False
+    is_clang=False
     command=['nm',program]
     nm=proc(command)
     if "afl" in nm:
         is_chazhuang=True
     if "gcov" in nm:
         is_cov=True
-    return is_cov,is_chazhuang
+    if "llvm" in nm:
+        is_clang=True
+    return is_cov,is_chazhuang,is_clang
 
 def crash_analyzed(name,num,default="crashes"):
     num=int(num)
