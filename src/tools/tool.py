@@ -116,6 +116,7 @@ def run(name, program, testcase, coverage_enabled, src, isfirst=True):
         return ("执行命令参数过少")
     program=program.replace(target, target1)
     os.makedirs("out",exist_ok=True)
+    os.makedirs('out/'+name,exist_ok=True)
     # if os.path.exists('out/'+name):
     #     shutil.rmtree('out/'+name)
     is_cov,is_chazhuang,is_clang=file_analyzed(target)
@@ -124,13 +125,15 @@ def run(name, program, testcase, coverage_enabled, src, isfirst=True):
         if not is_cov:
             return("编译时请加上'-fprofile-arcs -ftest-coverage'")
         size = '162'
-        cov_cmd = [tools_path+"/cov/afl-cov", "-d", 'out/'+name, "--live","--sleep", "2","--lcov-web-all",
+        cov_cmd = [tools_path+"/cov/afl-cov", "-d", 'out/'+name, "--live","--sleep", "1","--lcov-web-all",
                    "--coverage-cmd=\'"+program.replace("@@", "AFL_FILE")+"\'",
                    "--code-dir="+src]
         if is_clang:
             cov_cmd+=["--clang"]
         afl_cov = " \\\""+(" ").join(cov_cmd)+"\\\" \; split-window -h"
-        print ("cov_cmd: "+(" ").join(cov_cmd))
+        print("cov_cmd: "+(" ").join(cov_cmd)+"\n")
+        with open("out/"+name+"/afl-cov-cmd","w") as file:
+            file.write((" ").join(cov_cmd))
     afl_cmd_list = [tools_path+'/fuzz/afl-fuzz','-i',
                     testcase, '-o', 'out/'+name, '--', program]
     if not is_chazhuang:
@@ -145,6 +148,7 @@ def run(name, program, testcase, coverage_enabled, src, isfirst=True):
     # error_info=get_afl_info(afl_cmd_list)
     cmd(command, size)
     sleep(1)
+    
     if os.path.exists('out/'+name):
         with open('out/'+name+'/.minifuzz_dir', 'w') as file:
             file.write("这是minifuzz目录")
@@ -179,10 +183,10 @@ def file_analyzed(program):
 
 def crash_analyzed(name,num,default="crashes"):
     num=int(num)
-    stats_path = current_dir+"/out/"+name+"/default/fuzzer_stats"
-    crashes_path = current_dir+"/out/"+name+"/default/"+default
-    crash_analyzed_path = current_dir+"/out/"+name+"/"+default
-    new_crashes_path = current_dir+"/out/"+name+"/"+default+"/"+default
+    stats_path = "/out/"+name+"/default/fuzzer_stats"
+    crashes_path = "/out/"+name+"/default/"+default
+    crash_analyzed_path = "/out/"+name+"/"+default
+    new_crashes_path = "/out/"+name+"/"+default+"/"+default
     is_crash=False
     if os.path.exists(stats_path) and len(os.listdir(crashes_path))!=0 :
         os.makedirs(crash_analyzed_path,exist_ok=True)
@@ -410,3 +414,12 @@ def crash_show(name,crashes="crashes"):
     crash_analyzed_path="out/"+name+"/"+crashes
     proc(['xdg-open',crash_analyzed_path])
     
+def cov_analyse(name):
+    if os.path.exists("out/"+name+"/cov"):
+        with open("out/"+name+"/afl-cov-cmd","r") as fd:
+            command_line=fd.readline()
+        command_line=command_line.replace("--live --sleep 1 --lcov-web-all","--cover-corpus --overwrite")
+        try:
+            subprocess.call(command_line,shell=True)
+        except Exception as e:
+            print(e)

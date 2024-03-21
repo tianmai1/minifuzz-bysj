@@ -134,9 +134,11 @@ class Ui_fuzz(object):
                 if not psutil.pid_exists(int(afl_pid)):
                     _info("提示", "稍等，正在计算覆盖率")
                     return
-                # print (afl_pid)
                 try:
-                    subprocess.run(['kill', str(afl_pid)])
+                    # subprocess.run(['kill', str(afl_pid)])
+                    subprocess.run(['tmux', 'kill-window', '-t', name])
+                    sleep(1)
+                    tool.cov_analyse(name)
                 except Exception as e:
                     print(e)
                     return
