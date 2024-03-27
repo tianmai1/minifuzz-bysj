@@ -1,15 +1,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import os
 import shutil
-import subprocess
-from time import sleep
-import sys
 from PyQt5.QtWidgets import *
-from PyQt5.QtCore import Qt, QRegExp
-from PyQt5.QtGui import QIcon, QPixmap,QRegExpValidator
-import psutil
 import tools.tool as tool
-from qt_material import apply_stylesheet
 import webbrowser
 from Ui_fuzz  import _info
 

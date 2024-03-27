@@ -9,9 +9,8 @@
 
 import os
 from PyQt5 import QtCore, QtGui, QtWidgets
-import markdown
 from PyQt5.QtWidgets import *
-from PyQt5.QtCore import Qt, QRegExp
+from PyQt5.QtCore import Qt
 
 class MarkdownDialog(QDialog):
     def __init__(self, parent=None):

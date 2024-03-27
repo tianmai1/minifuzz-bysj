@@ -173,7 +173,6 @@ def infopp_fx(addr:int,is_args:bool=False):
             pc_lines=pc_line.replace('symbol and line for ','').replace(', line ',':')
             code=gdb.execute("list "+pc_lines,to_string=True)
             codes=code.splitlines()
-            print(codes)
             if len(codes)>2:
                 line=pc_lines.split(":")[1]
                 for j in range(len(codes)):

@@ -183,10 +183,10 @@ def file_analyzed(program):
 
 def crash_analyzed(name,num,default="crashes"):
     num=int(num)
-    stats_path = "/out/"+name+"/default/fuzzer_stats"
-    crashes_path = "/out/"+name+"/default/"+default
-    crash_analyzed_path = "/out/"+name+"/"+default
-    new_crashes_path = "/out/"+name+"/"+default+"/"+default
+    stats_path = "out/"+name+"/default/fuzzer_stats"
+    crashes_path = "out/"+name+"/default/"+default
+    crash_analyzed_path = "out/"+name+"/"+default
+    new_crashes_path = "out/"+name+"/"+default+"/"+default
     is_crash=False
     if os.path.exists(stats_path) and len(os.listdir(crashes_path))!=0 :
         os.makedirs(crash_analyzed_path,exist_ok=True)
