@@ -19,6 +19,48 @@
    <string>MiniFuzz</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="0">
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../src/tools/images/蓝色别墅.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="show1">
+     <property name="text">
+      <string>展示</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="analyse">
+     <property name="text">
+      <string>分析</string>
+     </property>
+    </widget>
+   </item>
    <item row="0" column="0">
     <widget class="QPushButton" name="fuzz">
      <property name="sizePolicy">
@@ -32,7 +74,7 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="1" rowspan="4">
+   <item row="0" column="1" rowspan="5">
     <widget class="QFrame" name="frame">
      <property name="minimumSize">
       <size>
@@ -57,42 +99,26 @@
      </property>
     </widget>
    </item>
-   <item row="1" column="0">
-    <widget class="QPushButton" name="show1">
-     <property name="text">
-      <string>展示</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="QPushButton" name="analyse">
-     <property name="text">
-      <string>分析</string>
-     </property>
-    </widget>
-   </item>
    <item row="3" column="0">
-    <widget class="QLabel" name="label">
-     <property name="layoutDirection">
-      <enum>Qt::LeftToRight</enum>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
      </property>
-     <property name="text">
-      <string/>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
      </property>
-     <property name="pixmap">
-      <pixmap>../images/蓝色别墅.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
+    </spacer>
    </item>
   </layout>
   <zorder>frame</zorder>
-  <zorder>label</zorder>
   <zorder>fuzz</zorder>
   <zorder>show1</zorder>
   <zorder>analyse</zorder>
+  <zorder>label</zorder>
+  <zorder>verticalSpacer</zorder>
  </widget>
  <resources/>
  <connections/>

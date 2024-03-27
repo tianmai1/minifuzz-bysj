@@ -5,10 +5,7 @@ import subprocess
 import multiprocessing
 from time import sleep
 import tools.hangs as hangs
-import re
 from ansi2html import Ansi2HTMLConverter
-from colormath.color_objects import sRGBColor
-from colormath.color_conversions import convert_color
 import psutil
 import concurrent.futures
 import functools
