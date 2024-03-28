@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/home/tianmai/workspace/bysj_plus/minifuzz-bysj/test/codedoc/codedoc
+AFL_CUSTOM_INFO_PROGRAM_ARGV=@@
+AFL_CUSTOM_INFO_OUT=out/co/default
+# command line:
+'/home/tianmai/workspace/bysj_plus/minifuzz-bysj/src/tools/fuzz/afl-fuzz' '-i' '../codedoc-in' '-o' 'out/co' '--' '/home/tianmai/workspace/bysj_plus/minifuzz-bysj/test/codedoc/codedoc' '@@'

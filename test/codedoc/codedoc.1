@@ -1,0 +1,175 @@
+.\"
+.\" codedoc man page
+.\"
+.\"     https://www.msweet.org/codedoc
+.\"
+.\" Copyright © 2003-2022 by Michael R Sweet.
+.\"
+.\" Licensed under Apache License v2.0.  See the file "LICENSE" for more
+.\" information.
+.\"
+.TH codedoc 1 "codedoc" "2022-08-29" "Michael R Sweet"
+.SH NAME
+codedoc \- code documentation utility
+.SH SYNOPSIS
+.B codedoc
+\-\-no-output [
+.I filename.xml
+]
+.I source file(s)
+]
+.br
+.B codedoc
+[ \-\-author
+.I author
+] [ \-\-body
+.I filename.{html,md}
+] [ \-\-copyright
+.I copyright
+] [ \-\-coverimage
+.I filename.png
+] [ \-\-css
+.I filename.css
+] [ \-\-footer
+.I filename.{html,md}
+] [ \-\-header
+.I filename.{html,md}
+] [ \-\-language
+.I ll[-LOC]
+] [ \-\-section
+.I section
+] [ \-\-title
+.I title
+] [
+.I filename.xml
+] [
+.I source file(s)
+] >
+.I filename.html
+.br
+.B codedoc
+[ \-\-author
+.I author
+] [ \-\-body
+.I filename.{man,md}
+] [ \-\-copyright
+.I copyright
+] [ \-\-footer
+.I filename.{man,md}
+] [ \-\-header
+.I filename.{man,md}
+] \-\-man
+.I manpage
+[ \-\-section
+.I section
+] [ \-\-title
+.I title
+] [
+.I filename.xml
+] [
+.I source file(s)
+] >
+.I filename.man
+.br
+.B codedoc
+\-\-epub
+.I filename.epub
+[ \-\-author
+.I author
+] [ \-\-body
+.I filename.{html,md,xhtml}
+] [ \-\-copyright
+.I copyright
+] [ \-\-coverimage
+.I filename.png
+] [ \-\-css
+.I filename.css
+] [ \-\-docversion
+.I version
+] [ \-\-footer
+.I filename.{html,md,xhtml}
+] [ \-\-header
+.I filename.{html,md,xhtml}
+] [ \-\-language
+.I ll[-LOC]
+] [ \-\-section
+.I section
+] [ \-\-title
+.I title
+] [
+.I filename.xml
+] [
+.I source file(s)
+]
+.SH DESCRIPTION
+.B codedoc
+scans the specified C and C++ source files to produce an XML representation of globally accessible classes, constants, enumerations, functions, structures, typedefs, unions, and variables - the XML file is updated as necessary.
+By default, a HTML representation of the XML file is written to the standard output.
+Use the
+.B \-\-no-output
+option to disable the HTML output.
+.PP
+Man page source can be generated using the
+.B \-\-man
+option.
+EPUB books can be generated using the
+.B \-\-epub
+option.
+.PP
+If no source files are specified then the current XML file is converted to the standard output.
+.PP
+In general, any C or C++ source code is handled by
+.B codedoc,
+however it was specifically written to handle code with documentation that is formatted according to the CUPS Developer Guide which is available at "https://www.cups.org/doc/spec-cmp.html".
+.SH OPTIONS
+.TP 5
+\fB\-\-author \fI"author name"\fR
+Specifies the name of the documentation author.
+.TP 5
+\fB\-\-body \fIfilename\fR
+Inserts the specified file between the table of contents and references.
+This file can be markdown, man, HTML, or XHTML source.
+.TP 5
+\fB\-\-copyright \fI"copyright text"\fR
+Specifies the copyright text to use.
+.TP 5
+\fB\-\-coverimage \fIfilename.png\fR
+Specifies the cover image to use (EPUB and HTML output only).
+.TP 5
+\fB\-\-css \fIfilename.css\fR
+Specifies the stylesheet to use (EPUB and HTML output only).
+.TP 5
+\fB\-\-docversion \fI"version"\fR
+Specifies the version number for the generated documentation.
+.TP 5
+\fB\-\-epub \fIfilename.epub\fR
+Creates an EPUB book with the specified filename.
+.TP 5
+\fB\-\-footer \fIfilename\fR
+Inserts the specified file at the bottom of the output documentation.
+This file can be markdown, man, HTML, or XHTML source.
+.TP 5
+\fB\-\-header \fIfilename\fR
+Inserts the specified file at the top of the output documentation.
+This file can be markdown, man, HTML, or XHTML source.
+.TP 5
+\fB\-\-language \fIll[-LOC]\fR
+Specifies the ISO language and locality codes of the output documentation.
+By convention the language code is lowercase followed optionally by a hyphen and the locality code (often a country code) in uppercase.
+The default is "en-US" for US English.
+.TP 5
+\fB\-\-man \fImanpage\fR
+Generated a man page instead of HTML documentation.
+.TP 5
+\fB\-\-no-output\fR
+Disables generation of documentation on the standard output.
+.TP 5
+\fB\-\-section \fIsection\fR
+Sets the section/keywords in the output documentation.
+.TP 5
+\fB\-\-title \fItitle\fR
+Sets the title of the output documentation.
+.SH SEE ALSO
+https://www.msweet.org/codedoc
+.SH COPYRIGHT
+Copyright \[co] 2003-2022 by Michael R Sweet.

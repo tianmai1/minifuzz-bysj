@@ -1,0 +1,2244 @@
+
+*** Imported 35 new test cases from: out/co/default/queue
+
+[+] AFL test case: id:000000,time:0,execs:0,orig:poc (0 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpttyxm2wq
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpttyxm2wq /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpttyxm2wq
+Reading tracefile /tmp/tmpttyxm2wq
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+
+
+++++++ BEGIN - first exec output for CMD: /home/tianmai/workspace/bysj_plus/minifuzz-bysj/test/codedoc/codedoc out/co/default/queue/id:000000,time:0,execs:0,orig:poc
+    <!DOCTYPE html>
+    <html lang="en-US">
+    <head>
+    <title>Documentation</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="generator" content="codedoc v3.7">
+    <meta name="author" content="Unknown">
+    <meta name="language" content="en-US">
+    <meta name="copyright" content="Unknown">
+    <meta name="version" content="0.0">
+    <style type="text/css"><!--
+    body {
+      background: white;
+      color: black;
+      font-family: sans-serif;
+      font-size: 12pt;
+    }
+    a {
+      color: black;
+    }
+    a:link, a:visited {
+      color: #00f;
+    }
+    a:link:hover, a:visited:hover, a:active {
+      color: #c0c;
+    }
+    body, p, h1, h2, h3, h4, h5, h6 {
+      font-family: sans-serif;
+      line-height: 1.4;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+      page-break-inside: avoid;
+    }
+    h1 {
+      font-size: 250%;
+      margin: 0;
+    }
+    h2 {
+      font-size: 250%;
+      margin-top: 1.5em;
+    }
+    h3 {
+      font-size: 200%;
+      margin-bottom: 0.5em;
+      margin-top: 1.5em;
+    }
+    h4 {
+      font-size: 150%;
+      margin-bottom: 0.5em;
+      margin-top: 1.5em;
+    }
+    h5 {
+      font-size: 125%;
+      margin-bottom: 0.5em;
+      margin-top: 1.5em;
+    }
+    h6 {
+      font-size: 110%;
+      margin-bottom: 0.5em;
+      margin-top: 1.5em;
+    }
+    img.title {
+      width: 256px;
+    }
+    div.header h1, div.header p {
+      text-align: center;
+    }
+    div.contents, div.body, div.footer {
+      page-break-before: always;
+    }
+    .class, .enumeration, .function, .struct, .typedef, .union {
+      border-bottom: solid 2px gray;
+    }
+    .description {
+      margin-top: 0.5em;
+    }
+    .function {
+      margin-bottom: 0;
+    }
+    blockquote {
+      border: solid thin gray;
+      box-shadow: 3px 3px 5px rgba(127,127,127,0.25);
+      margin: 1em 0;
+      padding: 10px;
+      page-break-inside: avoid;
+    }
+    p code, li code, p.code, pre, ul.code li {
+      font-family: monospace;
+      hyphens: manual;
+      -webkit-hyphens: manual;
+    }
+    p.code, pre, ul.code li {
+      background: rgba(127,127,127,0.25);
+      border: thin dotted gray;
+      padding: 10px;
+      page-break-inside: avoid;
+    }
+    pre {
+      white-space: pre-wrap;
+    }
+    a:link, a:visited {
+      text-decoration: none;
+    }
+    span.info {
+      background: black;
+      border: solid thin black;
+      color: white;
+      font-size: 80%;
+      font-style: italic;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    h1 span.info, h2 span.info, h3 span.info, h4 span.info {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      float: right;
+      padding: 3px 6px;
+    }
+    ul.code, ul.contents, ul.subcontents {
+      list-style-type: none;
+      margin: 0;
+      padding-left: 0;
+    }
+    ul.code li {
+      margin: 0;
+    }
+    ul.contents > li {
+      margin-top: 1em;
+    }
+    ul.contents li ul.code, ul.contents li ul.subcontents {
+      padding-left: 2em;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    td {
+      border: solid 1px gray;
+      padding: 5px 10px;
+      vertical-align: top;
+    }
+    td.left {
+      text-align: left;
+    }
+    td.center {
+      text-align: center;
+    }
+    td.right {
+      text-align: right;
+    }
+    th {
+      border-bottom: solid 2px gray;
+      padding: 1px 5px;
+      text-align: center;
+      vertical-align: bottom;
+    }
+    tr:nth-child(even) {
+      background: rgba(127,127,127,0.25);
+    }
+    table.list {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table.list th {
+      border-bottom: none;
+      border-right: 2px solid gray;
+      font-family: monospace;
+      font-weight: normal;
+      padding: 5px 10px 5px 2px;
+      text-align: right;
+      vertical-align: top;
+    }
+    table.list td {
+      border: none;
+      padding: 5px 2px 5px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    h2.title, h3.title {
+      border-bottom: solid 2px gray;
+    }
+    /* Syntax highlighting */
+    span.comment {
+      color: darkgreen;
+    }
+    span.directive {
+      color: purple;
+    }
+    span.number {
+      color: brown;
+    }
+    span.reserved {
+      color: darkcyan;
+    }
+    span.string {
+      color: magenta;
+    }
+    /* Dark mode overrides */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: black;
+        color: #ccc;
+      }
+      a {
+        color: #ccc;
+      }
+      a:link, a:visited {
+        color: #66f;
+      }
+      a:link:hover, a:visited:hover, a:active {
+        color: #f06;
+      }
+    }
+    /* Show contents on left side in web browser */
+    @media screen and (min-width: 800px) {
+      div.contents {
+        border-right: solid thin gray;
+        bottom: 0px;
+        box-shadow: 3px 3px 5px rgba(127,127,127,0.5);
+        font-size: 10pt;
+        left: 0px;
+        overflow: scroll;
+        padding: 1%;
+        position: fixed;
+        top: 0px;
+        width: 18%;
+      }
+      div.contents h2.title {
+        margin-top: 0px;
+      }
+      div.header, div.body, div.footer {
+        margin-left: 20%;
+        padding: 1% 2%;
+      }
+    }
+    /* Center title page content vertically */
+    @media print {
+      div.header {
+        padding-top: 33%;
+      }
+    }
+    --></style>
+    </head>
+    <body>
+    <div class="header">
+    <h1 class="title">Documentation</h1>
+    <p>Unknown</p>
+    <p>Unknown</p>
+    </div>
+    <div class="contents">
+    <h2 class="title">Contents</h2>
+    <ul class="contents">
+    <li><a href="#ENUMERATIONS">Enumerations</a><ul class="subcontents">
+    <li><a href="#0">0</a></li>
+    </ul></li>
+    </ul>
+    </div>
+    <div class="body">
+    <h2 class="title"><a id="ENUMERATIONS">Constants</a></h2>
+    <h3 class="enumeration"><a id="0">0</a></h3>
+    <p class="description"></p>
+    <h4 class="constants">Constants</h4>
+    <table class="list"><tbody>
+    </tbody></table>
+    </div>
+    </body>
+    </html>
+++++++ END
+
+[+] AFL test case: id:000001,time:0,execs:0,orig:poc1 (1 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpum5aqf3_
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpum5aqf3_ /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpum5aqf3_
+Reading tracefile /tmp/tmpum5aqf3_
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000002,time:0,execs:0,orig:poc2 (2 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmphp8uwi71
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmphp8uwi71 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmphp8uwi71
+Reading tracefile /tmp/tmphp8uwi71
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000003,time:0,execs:0,orig:poc3 (3 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpb7gygf06
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpb7gygf06 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpb7gygf06
+Reading tracefile /tmp/tmpb7gygf06
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000004,time:0,execs:0,orig:poc4 (4 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpe5lpr2s5
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpe5lpr2s5 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpe5lpr2s5
+Reading tracefile /tmp/tmpe5lpr2s5
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000005,time:0,execs:0,orig:poc5 (5 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp1bqecz_f
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp1bqecz_f /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp1bqecz_f
+Reading tracefile /tmp/tmp1bqecz_f
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000006,time:0,execs:0,orig:poc6 (6 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpw95wyyya
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpw95wyyya /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpw95wyyya
+Reading tracefile /tmp/tmpw95wyyya
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000007,time:0,execs:0,orig:poc7 (7 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpy57g4w3p
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpy57g4w3p /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpy57g4w3p
+Reading tracefile /tmp/tmpy57g4w3p
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000008,src:000000,time:42,execs:70,op:havoc,rep:2,+cov (8 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp031rp674
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp031rp674 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp031rp674
+Reading tracefile /tmp/tmp031rp674
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000009,src:000000,time:82,execs:78,op:havoc,rep:2,+cov (9 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpq88lmjzs
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpq88lmjzs /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpq88lmjzs
+Reading tracefile /tmp/tmpq88lmjzs
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000010,src:000000,time:112,execs:86,op:havoc,rep:2,+cov (10 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp2oxl_bdy
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp2oxl_bdy /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp2oxl_bdy
+Reading tracefile /tmp/tmp2oxl_bdy
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000011,src:000000,time:142,execs:94,op:havoc,rep:2,+cov (11 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpnhfolkn7
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpnhfolkn7 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpnhfolkn7
+Reading tracefile /tmp/tmpnhfolkn7
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000012,src:000000,time:172,execs:102,op:havoc,rep:2,+cov (12 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpcqruq5fx
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpcqruq5fx /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpcqruq5fx
+Reading tracefile /tmp/tmpcqruq5fx
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000013,src:000000,time:208,execs:112,op:havoc,rep:2 (13 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmps1_s5cp6
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmps1_s5cp6 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmps1_s5cp6
+Reading tracefile /tmp/tmps1_s5cp6
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000014,src:000000,time:237,execs:120,op:havoc,rep:1,+cov (14 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp32318edr
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp32318edr /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp32318edr
+Reading tracefile /tmp/tmp32318edr
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000015,src:000000,time:270,execs:128,op:havoc,rep:2 (15 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp09i77_3j
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp09i77_3j /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp09i77_3j
+Reading tracefile /tmp/tmp09i77_3j
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000016,src:000000,time:301,execs:137,op:havoc,rep:1,+cov (16 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp4o7m1uur
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp4o7m1uur /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp4o7m1uur
+Reading tracefile /tmp/tmp4o7m1uur
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000017,src:000000,time:333,execs:145,op:havoc,rep:2 (17 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpa8sdd4s7
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpa8sdd4s7 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpa8sdd4s7
+Reading tracefile /tmp/tmpa8sdd4s7
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000018,src:000000,time:364,execs:153,op:havoc,rep:1,+cov (18 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpey0y_tua
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpey0y_tua /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpey0y_tua
+Reading tracefile /tmp/tmpey0y_tua
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000019,src:000000,time:393,execs:161,op:havoc,rep:2 (19 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpohzuks_r
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpohzuks_r /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpohzuks_r
+Reading tracefile /tmp/tmpohzuks_r
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000020,src:000000,time:423,execs:169,op:havoc,rep:2 (20 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpdbi733fy
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpdbi733fy /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpdbi733fy
+Reading tracefile /tmp/tmpdbi733fy
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000021,src:000000,time:452,execs:178,op:havoc,rep:1,+cov (21 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpgadgfuyv
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpgadgfuyv /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpgadgfuyv
+Reading tracefile /tmp/tmpgadgfuyv
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000022,src:000000,time:485,execs:187,op:havoc,rep:1 (22 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpjoogx1kx
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpjoogx1kx /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpjoogx1kx
+Reading tracefile /tmp/tmpjoogx1kx
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000023,src:000000,time:520,execs:197,op:havoc,rep:2,+cov (23 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp964otpj5
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp964otpj5 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp964otpj5
+Reading tracefile /tmp/tmp964otpj5
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000024,src:000000,time:556,execs:206,op:havoc,rep:2 (24 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpd3gqylg8
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpd3gqylg8 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpd3gqylg8
+Reading tracefile /tmp/tmpd3gqylg8
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000025,src:000000,time:583,execs:214,op:havoc,rep:1 (25 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpb1142ve4
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpb1142ve4 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpb1142ve4
+Reading tracefile /tmp/tmpb1142ve4
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000026,src:000000,time:613,execs:223,op:havoc,rep:2 (26 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp60hvrfg3
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp60hvrfg3 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp60hvrfg3
+Reading tracefile /tmp/tmp60hvrfg3
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000027,src:000000,time:644,execs:231,op:havoc,rep:2,+cov (27 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpqlb76ndl
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpqlb76ndl /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpqlb76ndl
+Reading tracefile /tmp/tmpqlb76ndl
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000028,src:000000,time:674,execs:239,op:havoc,rep:1,+cov (28 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpn6uvx2fl
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpn6uvx2fl /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpn6uvx2fl
+Reading tracefile /tmp/tmpn6uvx2fl
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000029,src:000000,time:704,execs:247,op:havoc,rep:2 (29 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmphs82zzw9
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmphs82zzw9 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmphs82zzw9
+Reading tracefile /tmp/tmphs82zzw9
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000030,src:000000,time:747,execs:260,op:havoc,rep:1 (30 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpia3g3yrs
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpia3g3yrs /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpia3g3yrs
+Reading tracefile /tmp/tmpia3g3yrs
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000031,src:000000,time:780,execs:269,op:havoc,rep:1 (31 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpz4bkhac0
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpz4bkhac0 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpz4bkhac0
+Reading tracefile /tmp/tmpz4bkhac0
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000032,src:000000,time:816,execs:277,op:havoc,rep:2 (32 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpx6ti4zaq
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpx6ti4zaq /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpx6ti4zaq
+Reading tracefile /tmp/tmpx6ti4zaq
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000033,src:000000,time:850,execs:287,op:havoc,rep:2 (33 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpo7c5tazq
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpo7c5tazq /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpo7c5tazq
+Reading tracefile /tmp/tmpo7c5tazq
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000034,src:000000,time:893,execs:297,op:havoc,rep:2 (34 / 35), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpdh6wxydu
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpdh6wxydu /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpdh6wxydu
+Reading tracefile /tmp/tmpdh6wxydu
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+
+*** Imported 133 new test cases from: out/co/default/queue
+
+[+] AFL test case: id:000035,src:000000,time:926,execs:305,op:havoc,rep:1 (0 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpv9xc9h5j
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpv9xc9h5j /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpv9xc9h5j
+Reading tracefile /tmp/tmpv9xc9h5j
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000036,src:000000,time:961,execs:315,op:havoc,rep:2,+cov (1 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp3gff_ndw
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp3gff_ndw /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp3gff_ndw
+Reading tracefile /tmp/tmp3gff_ndw
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000037,src:000000,time:993,execs:323,op:havoc,rep:1 (2 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpyh0eju60
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpyh0eju60 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpyh0eju60
+Reading tracefile /tmp/tmpyh0eju60
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000038,src:000000,time:1032,execs:333,op:havoc,rep:2,+cov (3 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp8botd22v
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp8botd22v /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp8botd22v
+Reading tracefile /tmp/tmp8botd22v
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000039,src:000000,time:1071,execs:341,op:havoc,rep:1,+cov (4 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmph15ssnnn
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmph15ssnnn /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmph15ssnnn
+Reading tracefile /tmp/tmph15ssnnn
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000040,src:000000,time:1108,execs:351,op:havoc,rep:2 (5 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpljfv8j21
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpljfv8j21 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpljfv8j21
+Reading tracefile /tmp/tmpljfv8j21
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000041,src:000000,time:1147,execs:363,op:havoc,rep:2,+cov (6 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmphzohqsu5
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmphzohqsu5 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmphzohqsu5
+Reading tracefile /tmp/tmphzohqsu5
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000042,src:000000,time:1180,execs:371,op:havoc,rep:1 (7 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpy7y9leen
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpy7y9leen /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpy7y9leen
+Reading tracefile /tmp/tmpy7y9leen
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000043,src:000000,time:1215,execs:380,op:havoc,rep:2,+cov (8 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp0gotcl2m
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp0gotcl2m /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp0gotcl2m
+Reading tracefile /tmp/tmp0gotcl2m
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000044,src:000000,time:1260,execs:391,op:havoc,rep:1,+cov (9 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpqh1lp3lc
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpqh1lp3lc /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpqh1lp3lc
+Reading tracefile /tmp/tmpqh1lp3lc
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000045,src:000000,time:1299,execs:400,op:havoc,rep:2,+cov (10 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp54zfklwu
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp54zfklwu /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp54zfklwu
+Reading tracefile /tmp/tmp54zfklwu
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000046,src:000000,time:1343,execs:409,op:havoc,rep:2,+cov (11 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpmqlpoaj2
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpmqlpoaj2 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpmqlpoaj2
+Reading tracefile /tmp/tmpmqlpoaj2
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000047,src:000000,time:1394,execs:420,op:havoc,rep:1,+cov (12 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp084szui3
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp084szui3 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp084szui3
+Reading tracefile /tmp/tmp084szui3
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000048,src:000000,time:1438,execs:429,op:havoc,rep:2 (13 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp3ds40i6o
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp3ds40i6o /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp3ds40i6o
+Reading tracefile /tmp/tmp3ds40i6o
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000049,src:000000,time:1489,execs:438,op:havoc,rep:2,+cov (14 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpi1oihsls
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpi1oihsls /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpi1oihsls
+Reading tracefile /tmp/tmpi1oihsls
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000050,src:000000,time:1557,execs:449,op:havoc,rep:2,+cov (15 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp19qh6pl5
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp19qh6pl5 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp19qh6pl5
+Reading tracefile /tmp/tmp19qh6pl5
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000051,src:000000,time:1598,execs:460,op:havoc,rep:1,+cov (16 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp_5nfb2t7
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp_5nfb2t7 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp_5nfb2t7
+Reading tracefile /tmp/tmp_5nfb2t7
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000052,src:000000,time:1643,execs:472,op:havoc,rep:2 (17 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpdithh1o2
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpdithh1o2 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpdithh1o2
+Reading tracefile /tmp/tmpdithh1o2
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000053,src:000000,time:1670,execs:480,op:havoc,rep:2 (18 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpdm34bzlh
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpdm34bzlh /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpdm34bzlh
+Reading tracefile /tmp/tmpdm34bzlh
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000054,src:000000,time:1697,execs:488,op:havoc,rep:1,+cov (19 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpdgs25z__
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpdgs25z__ /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpdgs25z__
+Reading tracefile /tmp/tmpdgs25z__
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000055,src:000000,time:1733,execs:497,op:havoc,rep:1,+cov (20 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp2d0edq8f
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp2d0edq8f /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp2d0edq8f
+Reading tracefile /tmp/tmp2d0edq8f
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000056,src:000000,time:1779,execs:506,op:havoc,rep:1 (21 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpgesiegse
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpgesiegse /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpgesiegse
+Reading tracefile /tmp/tmpgesiegse
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000057,src:000000,time:1842,execs:525,op:havoc,rep:1 (22 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpf89anrgi
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpf89anrgi /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpf89anrgi
+Reading tracefile /tmp/tmpf89anrgi
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000058,src:000000,time:1873,execs:534,op:havoc,rep:2 (23 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpgpmax4ca
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpgpmax4ca /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpgpmax4ca
+Reading tracefile /tmp/tmpgpmax4ca
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000059,src:000000,time:1913,execs:544,op:havoc,rep:2 (24 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmptbi3ny19
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmptbi3ny19 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmptbi3ny19
+Reading tracefile /tmp/tmptbi3ny19
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000060,src:000000,time:1956,execs:553,op:havoc,rep:2 (25 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpzcpm07iv
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpzcpm07iv /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpzcpm07iv
+Reading tracefile /tmp/tmpzcpm07iv
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000061,src:000000,time:2022,execs:570,op:havoc,rep:2,+cov (26 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp3xxl56p7
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp3xxl56p7 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp3xxl56p7
+Reading tracefile /tmp/tmp3xxl56p7
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000062,src:000000,time:2066,execs:581,op:havoc,rep:1 (27 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpqb5amb8v
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpqb5amb8v /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpqb5amb8v
+Reading tracefile /tmp/tmpqb5amb8v
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000063,src:000000,time:2112,execs:594,op:havoc,rep:1 (28 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpoh_r9j3m
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpoh_r9j3m /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpoh_r9j3m
+Reading tracefile /tmp/tmpoh_r9j3m
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000064,src:000000,time:2152,execs:606,op:havoc,rep:1,+cov (29 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmppoa8_q7m
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmppoa8_q7m /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmppoa8_q7m
+Reading tracefile /tmp/tmppoa8_q7m
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000065,src:000000,time:2212,execs:622,op:havoc,rep:1 (30 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpmqj5zz7g
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpmqj5zz7g /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpmqj5zz7g
+Reading tracefile /tmp/tmpmqj5zz7g
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000066,src:000000,time:2299,execs:642,op:havoc,rep:2,+cov (31 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp605ouowa
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp605ouowa /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp605ouowa
+Reading tracefile /tmp/tmp605ouowa
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000067,src:000000,time:2342,execs:653,op:havoc,rep:2,+cov (32 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpajzxnot4
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpajzxnot4 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpajzxnot4
+Reading tracefile /tmp/tmpajzxnot4
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000068,src:000000,time:2383,execs:664,op:havoc,rep:1,+cov (33 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmprolp3d7v
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmprolp3d7v /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmprolp3d7v
+Reading tracefile /tmp/tmprolp3d7v
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000069,src:000000,time:2437,execs:679,op:havoc,rep:2,+cov (34 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp8tapdv1j
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp8tapdv1j /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp8tapdv1j
+Reading tracefile /tmp/tmp8tapdv1j
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000070,src:000000,time:2473,execs:688,op:havoc,rep:2 (35 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpnp2f3d56
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpnp2f3d56 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpnp2f3d56
+Reading tracefile /tmp/tmpnp2f3d56
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000071,src:000000,time:2528,execs:702,op:havoc,rep:2,+cov (36 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpckrntr4v
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpckrntr4v /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpckrntr4v
+Reading tracefile /tmp/tmpckrntr4v
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000072,src:000000,time:2563,execs:712,op:havoc,rep:2 (37 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmphuc376k4
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmphuc376k4 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmphuc376k4
+Reading tracefile /tmp/tmphuc376k4
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000073,src:000000,time:2597,execs:721,op:havoc,rep:2,+cov (38 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpr5rez9dx
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpr5rez9dx /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpr5rez9dx
+Reading tracefile /tmp/tmpr5rez9dx
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000074,src:000000,time:2648,execs:735,op:havoc,rep:2 (39 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpagxqxfqe
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpagxqxfqe /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpagxqxfqe
+Reading tracefile /tmp/tmpagxqxfqe
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000075,src:000000,time:2727,execs:758,op:havoc,rep:2,+cov (40 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpsfqskef0
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpsfqskef0 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpsfqskef0
+Reading tracefile /tmp/tmpsfqskef0
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000076,src:000000,time:2762,execs:767,op:havoc,rep:1 (41 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp2uvxrarq
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp2uvxrarq /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp2uvxrarq
+Reading tracefile /tmp/tmp2uvxrarq
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000077,src:000000,time:2801,execs:779,op:havoc,rep:2 (42 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpfhowh7ue
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpfhowh7ue /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpfhowh7ue
+Reading tracefile /tmp/tmpfhowh7ue
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000078,src:000000,time:2834,execs:788,op:havoc,rep:1 (43 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmppcba457j
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmppcba457j /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmppcba457j
+Reading tracefile /tmp/tmppcba457j
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000079,src:000000,time:2893,execs:805,op:havoc,rep:1 (44 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpwdlr_sfn
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpwdlr_sfn /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpwdlr_sfn
+Reading tracefile /tmp/tmpwdlr_sfn
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000080,src:000000,time:3011,execs:838,op:havoc,rep:1,+cov (45 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpmdmdkhjy
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpmdmdkhjy /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpmdmdkhjy
+Reading tracefile /tmp/tmpmdmdkhjy
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000081,src:000000,time:3048,execs:847,op:havoc,rep:1,+cov (46 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpv74unxrs
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpv74unxrs /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpv74unxrs
+Reading tracefile /tmp/tmpv74unxrs
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000082,src:000000,time:3110,execs:863,op:havoc,rep:2 (47 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpt63qmwvt
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpt63qmwvt /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpt63qmwvt
+Reading tracefile /tmp/tmpt63qmwvt
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000083,src:000000,time:3143,execs:873,op:havoc,rep:1 (48 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpe8mtjfb3
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpe8mtjfb3 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpe8mtjfb3
+Reading tracefile /tmp/tmpe8mtjfb3
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000084,src:000000,time:3261,execs:908,op:havoc,rep:1,+cov (49 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpujnyjbep
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpujnyjbep /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpujnyjbep
+Reading tracefile /tmp/tmpujnyjbep
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000085,src:000000,time:3361,execs:936,op:havoc,rep:2,+cov (50 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpc2u_m82o
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpc2u_m82o /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpc2u_m82o
+Reading tracefile /tmp/tmpc2u_m82o
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000086,src:000000,time:3402,execs:948,op:havoc,rep:2,+cov (51 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpo5yi0b01
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpo5yi0b01 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpo5yi0b01
+Reading tracefile /tmp/tmpo5yi0b01
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000087,src:000000,time:3434,execs:956,op:havoc,rep:2,+cov (52 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpm7ck4olw
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpm7ck4olw /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpm7ck4olw
+Reading tracefile /tmp/tmpm7ck4olw
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000088,src:000000,time:3472,execs:965,op:havoc,rep:1 (53 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpafopjbsj
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpafopjbsj /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpafopjbsj
+Reading tracefile /tmp/tmpafopjbsj
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000089,src:000000,time:3545,execs:986,op:havoc,rep:1 (54 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp6by86ntp
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp6by86ntp /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp6by86ntp
+Reading tracefile /tmp/tmp6by86ntp
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000090,src:000000,time:3592,execs:1001,op:havoc,rep:2 (55 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpukkaok3k
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpukkaok3k /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpukkaok3k
+Reading tracefile /tmp/tmpukkaok3k
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000091,src:000000,time:3628,execs:1010,op:havoc,rep:2 (56 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpy5yu0ik3
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpy5yu0ik3 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpy5yu0ik3
+Reading tracefile /tmp/tmpy5yu0ik3
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000092,src:000000,time:3680,execs:1023,op:havoc,rep:2 (57 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpczauqk2a
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpczauqk2a /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpczauqk2a
+Reading tracefile /tmp/tmpczauqk2a
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000093,src:000000,time:3723,execs:1035,op:havoc,rep:2,+cov (58 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmppd862_00
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmppd862_00 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmppd862_00
+Reading tracefile /tmp/tmppd862_00
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000094,src:000000,time:3759,execs:1045,op:havoc,rep:2 (59 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpw9p36h5_
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpw9p36h5_ /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpw9p36h5_
+Reading tracefile /tmp/tmpw9p36h5_
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000095,src:000000,time:3814,execs:1062,op:havoc,rep:2,+cov (60 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpsepf3x1i
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpsepf3x1i /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpsepf3x1i
+Reading tracefile /tmp/tmpsepf3x1i
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000096,src:000000,time:3887,execs:1084,op:havoc,rep:2 (61 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpn_97rsdj
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpn_97rsdj /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpn_97rsdj
+Reading tracefile /tmp/tmpn_97rsdj
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000097,src:000000,time:3927,execs:1095,op:havoc,rep:1 (62 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp9aru6ebg
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp9aru6ebg /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp9aru6ebg
+Reading tracefile /tmp/tmp9aru6ebg
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000098,src:000000,time:4027,execs:1126,op:havoc,rep:2 (63 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpn6vjtwcs
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpn6vjtwcs /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpn6vjtwcs
+Reading tracefile /tmp/tmpn6vjtwcs
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000099,src:000000,time:4093,execs:1144,op:havoc,rep:2,+cov (64 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp9kwfafli
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp9kwfafli /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp9kwfafli
+Reading tracefile /tmp/tmp9kwfafli
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000100,src:000000,time:4153,execs:1160,op:havoc,rep:1 (65 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp8vf24su5
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp8vf24su5 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp8vf24su5
+Reading tracefile /tmp/tmp8vf24su5
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000101,src:000000,time:4243,execs:1188,op:havoc,rep:2,+cov (66 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpey9rxfjl
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpey9rxfjl /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpey9rxfjl
+Reading tracefile /tmp/tmpey9rxfjl
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000102,src:000000,time:4323,execs:1210,op:havoc,rep:1 (67 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpybrjr4dl
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpybrjr4dl /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpybrjr4dl
+Reading tracefile /tmp/tmpybrjr4dl
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000103,src:000000,time:4369,execs:1222,op:havoc,rep:2 (68 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpfn685b38
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpfn685b38 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpfn685b38
+Reading tracefile /tmp/tmpfn685b38
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000104,src:000000,time:4422,execs:1237,op:havoc,rep:2 (69 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpslcgj2k0
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpslcgj2k0 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpslcgj2k0
+Reading tracefile /tmp/tmpslcgj2k0
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000105,src:000000,time:4453,execs:1245,op:havoc,rep:1 (70 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp39cg6y3a
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp39cg6y3a /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp39cg6y3a
+Reading tracefile /tmp/tmp39cg6y3a
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000106,src:000000,time:4529,execs:1267,op:havoc,rep:2 (71 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpzy87dvri
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpzy87dvri /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpzy87dvri
+Reading tracefile /tmp/tmpzy87dvri
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000107,src:000000,time:4591,execs:1284,op:havoc,rep:2,+cov (72 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp9y5wvvxc
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp9y5wvvxc /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp9y5wvvxc
+Reading tracefile /tmp/tmp9y5wvvxc
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000108,src:000000,time:4631,execs:1293,op:havoc,rep:2 (73 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp62kh06ue
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp62kh06ue /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp62kh06ue
+Reading tracefile /tmp/tmp62kh06ue
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000109,src:000000,time:4715,execs:1316,op:havoc,rep:2,+cov (74 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpwssx0pol
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpwssx0pol /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpwssx0pol
+Reading tracefile /tmp/tmpwssx0pol
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000110,src:000000,time:4760,execs:1328,op:havoc,rep:1 (75 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp4rjkszhh
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp4rjkszhh /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp4rjkszhh
+Reading tracefile /tmp/tmp4rjkszhh
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000111,src:000000,time:4800,execs:1340,op:havoc,rep:2,+cov (76 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp_hj1j5_2
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp_hj1j5_2 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp_hj1j5_2
+Reading tracefile /tmp/tmp_hj1j5_2
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000112,src:000000,time:4858,execs:1354,op:havoc,rep:2,+cov (77 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp2pxcdolf
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp2pxcdolf /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp2pxcdolf
+Reading tracefile /tmp/tmp2pxcdolf
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000113,src:000000,time:4904,execs:1366,op:havoc,rep:1 (78 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp3_cgiebm
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp3_cgiebm /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp3_cgiebm
+Reading tracefile /tmp/tmp3_cgiebm
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000114,src:000000,time:4936,execs:1375,op:havoc,rep:2,+cov (79 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpcdea5ydy
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpcdea5ydy /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpcdea5ydy
+Reading tracefile /tmp/tmpcdea5ydy
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000115,src:000000,time:4988,execs:1388,op:havoc,rep:2 (80 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpfot3x9uy
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpfot3x9uy /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpfot3x9uy
+Reading tracefile /tmp/tmpfot3x9uy
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000116,src:000000,time:5029,execs:1399,op:havoc,rep:2 (81 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpm3hvwbn0
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpm3hvwbn0 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpm3hvwbn0
+Reading tracefile /tmp/tmpm3hvwbn0
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000117,src:000000,time:5100,execs:1416,op:havoc,rep:2,+cov (82 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmplmsmuw0i
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmplmsmuw0i /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmplmsmuw0i
+Reading tracefile /tmp/tmplmsmuw0i
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000118,src:000000,time:5139,execs:1425,op:havoc,rep:1 (83 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmprhf3wd94
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmprhf3wd94 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmprhf3wd94
+Reading tracefile /tmp/tmprhf3wd94
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000119,src:000000,time:5180,execs:1436,op:havoc,rep:1 (84 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpbsg_tacs
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpbsg_tacs /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpbsg_tacs
+Reading tracefile /tmp/tmpbsg_tacs
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000120,src:000000,time:5269,execs:1460,op:havoc,rep:2 (85 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpqvysbxkf
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpqvysbxkf /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpqvysbxkf
+Reading tracefile /tmp/tmpqvysbxkf
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000121,src:000000,time:5373,execs:1488,op:havoc,rep:1 (86 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp68ifkkog
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp68ifkkog /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp68ifkkog
+Reading tracefile /tmp/tmp68ifkkog
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000122,src:000000,time:5407,execs:1497,op:havoc,rep:2,+cov (87 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpn_9dqhjt
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpn_9dqhjt /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpn_9dqhjt
+Reading tracefile /tmp/tmpn_9dqhjt
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000123,src:000000,time:5443,execs:1506,op:havoc,rep:2 (88 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpp_ry8ho1
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpp_ry8ho1 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpp_ry8ho1
+Reading tracefile /tmp/tmpp_ry8ho1
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000124,src:000000,time:5481,execs:1517,op:havoc,rep:2,+cov (89 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpik01_tsx
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpik01_tsx /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpik01_tsx
+Reading tracefile /tmp/tmpik01_tsx
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000125,src:000000,time:5543,execs:1534,op:havoc,rep:1 (90 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmps26cp7zl
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmps26cp7zl /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmps26cp7zl
+Reading tracefile /tmp/tmps26cp7zl
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000126,src:000000,time:5612,execs:1554,op:havoc,rep:2,+cov (91 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpd1wl_1ck
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpd1wl_1ck /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpd1wl_1ck
+Reading tracefile /tmp/tmpd1wl_1ck
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000127,src:000000,time:5670,execs:1569,op:havoc,rep:2 (92 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp7kl2nyrc
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp7kl2nyrc /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp7kl2nyrc
+Reading tracefile /tmp/tmp7kl2nyrc
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000128,src:000000,time:5787,execs:1602,op:havoc,rep:1 (93 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpt6vnux74
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpt6vnux74 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpt6vnux74
+Reading tracefile /tmp/tmpt6vnux74
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000129,src:000000,time:5857,execs:1623,op:havoc,rep:1 (94 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpd8aflvzn
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpd8aflvzn /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpd8aflvzn
+Reading tracefile /tmp/tmpd8aflvzn
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000130,src:000000,time:5924,execs:1643,op:havoc,rep:2 (95 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpyva1a8hs
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpyva1a8hs /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpyva1a8hs
+Reading tracefile /tmp/tmpyva1a8hs
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000131,src:000000,time:5993,execs:1661,op:havoc,rep:2,+cov (96 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmptaedzmjn
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmptaedzmjn /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmptaedzmjn
+Reading tracefile /tmp/tmptaedzmjn
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000132,src:000000,time:6082,execs:1685,op:havoc,rep:1 (97 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpe9ta9aaa
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpe9ta9aaa /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpe9ta9aaa
+Reading tracefile /tmp/tmpe9ta9aaa
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000133,src:000000,time:6264,execs:1737,op:havoc,rep:2 (98 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp8iudjwl_
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp8iudjwl_ /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp8iudjwl_
+Reading tracefile /tmp/tmp8iudjwl_
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000134,src:000000,time:6330,execs:1753,op:havoc,rep:1 (99 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp594i782i
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp594i782i /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp594i782i
+Reading tracefile /tmp/tmp594i782i
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000135,src:000000,time:6411,execs:1776,op:havoc,rep:2 (100 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmph5kvjyib
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmph5kvjyib /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmph5kvjyib
+Reading tracefile /tmp/tmph5kvjyib
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000136,src:000000,time:6499,execs:1803,op:havoc,rep:2,+cov (101 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp03ycc_8a
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp03ycc_8a /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp03ycc_8a
+Reading tracefile /tmp/tmp03ycc_8a
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000137,src:000000,time:6623,execs:1836,op:havoc,rep:1,+cov (102 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpiz5xvqf5
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpiz5xvqf5 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpiz5xvqf5
+Reading tracefile /tmp/tmpiz5xvqf5
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000138,src:000000,time:6701,execs:1856,op:havoc,rep:1 (103 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpe60zhi4z
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpe60zhi4z /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpe60zhi4z
+Reading tracefile /tmp/tmpe60zhi4z
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000139,src:000000,time:6750,execs:1870,op:havoc,rep:1,+cov (104 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp4o61saz4
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp4o61saz4 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp4o61saz4
+Reading tracefile /tmp/tmp4o61saz4
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000140,src:000000,time:7015,execs:1948,op:havoc,rep:2 (105 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp7g564flo
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp7g564flo /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp7g564flo
+Reading tracefile /tmp/tmp7g564flo
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000141,src:000000,time:7128,execs:1978,op:havoc,rep:2,+cov (106 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmppx2nl9oz
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmppx2nl9oz /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmppx2nl9oz
+Reading tracefile /tmp/tmppx2nl9oz
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000142,src:000000,time:7256,execs:2015,op:havoc,rep:2,+cov (107 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp470n8q8e
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp470n8q8e /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp470n8q8e
+Reading tracefile /tmp/tmp470n8q8e
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000143,src:000000,time:7466,execs:2075,op:havoc,rep:2,+cov (108 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpkxfn02qv
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpkxfn02qv /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpkxfn02qv
+Reading tracefile /tmp/tmpkxfn02qv
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000144,src:000000,time:7504,execs:2086,op:havoc,rep:2 (109 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmplm8nex18
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmplm8nex18 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmplm8nex18
+Reading tracefile /tmp/tmplm8nex18
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000145,src:000000,time:7556,execs:2100,op:havoc,rep:2 (110 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpdkfyrp0p
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpdkfyrp0p /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpdkfyrp0p
+Reading tracefile /tmp/tmpdkfyrp0p
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000146,src:000000,time:7605,execs:2112,op:havoc,rep:1,+cov (111 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp01fxp1fw
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp01fxp1fw /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp01fxp1fw
+Reading tracefile /tmp/tmp01fxp1fw
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000147,src:000000,time:7682,execs:2134,op:havoc,rep:1 (112 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpgvxw3kqa
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpgvxw3kqa /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpgvxw3kqa
+Reading tracefile /tmp/tmpgvxw3kqa
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000148,src:000000,time:7764,execs:2159,op:havoc,rep:2 (113 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpkws0b6je
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpkws0b6je /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpkws0b6je
+Reading tracefile /tmp/tmpkws0b6je
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000149,src:000000,time:7842,execs:2181,op:havoc,rep:1 (114 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpq_k8iyyt
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpq_k8iyyt /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpq_k8iyyt
+Reading tracefile /tmp/tmpq_k8iyyt
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000150,src:000000,time:7895,execs:2197,op:havoc,rep:2 (115 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpstzz1_7j
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpstzz1_7j /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpstzz1_7j
+Reading tracefile /tmp/tmpstzz1_7j
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000151,src:000000,time:7956,execs:2215,op:havoc,rep:2 (116 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpxd2011zk
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpxd2011zk /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpxd2011zk
+Reading tracefile /tmp/tmpxd2011zk
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000152,src:000000,time:8086,execs:2251,op:havoc,rep:2 (117 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmppovlf523
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmppovlf523 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmppovlf523
+Reading tracefile /tmp/tmppovlf523
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000153,src:000000,time:8168,execs:2275,op:havoc,rep:2,+cov (118 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpe4yxc32y
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpe4yxc32y /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpe4yxc32y
+Reading tracefile /tmp/tmpe4yxc32y
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000154,src:000000,time:8303,execs:2311,op:havoc,rep:2,+cov (119 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpi7o8gypz
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpi7o8gypz /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpi7o8gypz
+Reading tracefile /tmp/tmpi7o8gypz
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000155,src:000000,time:8384,execs:2332,op:havoc,rep:1 (120 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpzp1y1ik4
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpzp1y1ik4 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpzp1y1ik4
+Reading tracefile /tmp/tmpzp1y1ik4
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000156,src:000000,time:8451,execs:2350,op:havoc,rep:2 (121 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp7nxb3q8p
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp7nxb3q8p /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp7nxb3q8p
+Reading tracefile /tmp/tmp7nxb3q8p
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000157,src:000000,time:8559,execs:2379,op:havoc,rep:2,+cov (122 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpy7lwa6lk
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpy7lwa6lk /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpy7lwa6lk
+Reading tracefile /tmp/tmpy7lwa6lk
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000158,src:000000,time:8610,execs:2391,op:havoc,rep:1 (123 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpmx_xp91_
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpmx_xp91_ /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpmx_xp91_
+Reading tracefile /tmp/tmpmx_xp91_
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000159,src:000000,time:8823,execs:2452,op:havoc,rep:2 (124 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpsmo6xylb
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpsmo6xylb /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpsmo6xylb
+Reading tracefile /tmp/tmpsmo6xylb
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000160,src:000000,time:8857,execs:2460,op:havoc,rep:1 (125 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmplpybq3lt
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmplpybq3lt /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmplpybq3lt
+Reading tracefile /tmp/tmplpybq3lt
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000161,src:000000,time:8893,execs:2469,op:havoc,rep:2 (126 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpwzv3nrgc
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpwzv3nrgc /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpwzv3nrgc
+Reading tracefile /tmp/tmpwzv3nrgc
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000162,src:000000,time:8969,execs:2490,op:havoc,rep:2 (127 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpjb8rx3zu
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpjb8rx3zu /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpjb8rx3zu
+Reading tracefile /tmp/tmpjb8rx3zu
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000163,src:000000,time:9066,execs:2515,op:havoc,rep:2 (128 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpovq8c0ux
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpovq8c0ux /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpovq8c0ux
+Reading tracefile /tmp/tmpovq8c0ux
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000164,src:000000,time:9230,execs:2560,op:havoc,rep:2 (129 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpf1vq0af3
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpf1vq0af3 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpf1vq0af3
+Reading tracefile /tmp/tmpf1vq0af3
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000165,src:000000,time:9315,execs:2580,op:havoc,rep:1,+cov (130 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpu01wfg14
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpu01wfg14 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpu01wfg14
+Reading tracefile /tmp/tmpu01wfg14
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000166,src:000000,time:9609,execs:2661,op:havoc,rep:2,+cov (131 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpj4raplto
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpj4raplto /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpj4raplto
+Reading tracefile /tmp/tmpj4raplto
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000167,src:000000,time:9768,execs:2705,op:havoc,rep:1 (132 / 168), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp27fkar5h
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp27fkar5h /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp27fkar5h
+Reading tracefile /tmp/tmp27fkar5h
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+
+*** Imported 27 new test cases from: out/co/default/queue
+
+[+] AFL test case: id:000168,src:000000,time:9833,execs:2721,op:havoc,rep:2 (0 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpqc7d2nww
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpqc7d2nww /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpqc7d2nww
+Reading tracefile /tmp/tmpqc7d2nww
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000169,src:000000,time:10012,execs:2771,op:havoc,rep:2,+cov (1 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpq18hitms
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpq18hitms /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpq18hitms
+Reading tracefile /tmp/tmpq18hitms
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000170,src:000000,time:10109,execs:2791,op:havoc,rep:2 (2 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp9hbslflb
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp9hbslflb /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp9hbslflb
+Reading tracefile /tmp/tmp9hbslflb
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000171,src:000000,time:10266,execs:2826,op:havoc,rep:2 (3 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpdo0vdfxn
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpdo0vdfxn /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpdo0vdfxn
+Reading tracefile /tmp/tmpdo0vdfxn
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000172,src:000000,time:10304,execs:2835,op:havoc,rep:1 (4 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp_hyuzdlj
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp_hyuzdlj /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp_hyuzdlj
+Reading tracefile /tmp/tmp_hyuzdlj
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000173,src:000000,time:10618,execs:2922,op:havoc,rep:2 (5 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpi_ccv41y
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpi_ccv41y /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpi_ccv41y
+Reading tracefile /tmp/tmpi_ccv41y
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000174,src:000000,time:10867,execs:2995,op:havoc,rep:1,+cov (6 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpvoqc8hpw
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpvoqc8hpw /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpvoqc8hpw
+Reading tracefile /tmp/tmpvoqc8hpw
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000175,src:000000,time:11112,execs:3057,op:havoc,rep:1 (7 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpyp2nfg1r
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpyp2nfg1r /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpyp2nfg1r
+Reading tracefile /tmp/tmpyp2nfg1r
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000176,src:000000,time:11195,execs:3082,op:havoc,rep:2 (8 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpppp9nbrk
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpppp9nbrk /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpppp9nbrk
+Reading tracefile /tmp/tmpppp9nbrk
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000177,src:000000,time:11344,execs:3113,op:havoc,rep:2 (9 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpbgifonyv
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpbgifonyv /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpbgifonyv
+Reading tracefile /tmp/tmpbgifonyv
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000178,src:000000,time:11490,execs:3158,op:havoc,rep:2 (10 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp7db50_7x
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp7db50_7x /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp7db50_7x
+Reading tracefile /tmp/tmp7db50_7x
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000179,src:000000,time:11650,execs:3200,op:havoc,rep:2,+cov (11 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmppy58m2c7
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmppy58m2c7 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmppy58m2c7
+Reading tracefile /tmp/tmppy58m2c7
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000180,src:000000,time:11825,execs:3240,op:havoc,rep:2 (12 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpbrg68kyk
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpbrg68kyk /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpbrg68kyk
+Reading tracefile /tmp/tmpbrg68kyk
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000181,src:000000,time:12009,execs:3287,op:havoc,rep:2 (13 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpwngqt4rq
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpwngqt4rq /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpwngqt4rq
+Reading tracefile /tmp/tmpwngqt4rq
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000182,src:000000,time:12039,execs:3295,op:havoc,rep:1 (14 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpxu3hp8yj
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpxu3hp8yj /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpxu3hp8yj
+Reading tracefile /tmp/tmpxu3hp8yj
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000183,src:000000,time:12086,execs:3305,op:havoc,rep:2,+cov (15 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpmcmfjq75
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpmcmfjq75 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpmcmfjq75
+Reading tracefile /tmp/tmpmcmfjq75
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000184,src:000000,time:12257,execs:3351,op:havoc,rep:2 (16 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp8_vevhka
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp8_vevhka /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp8_vevhka
+Reading tracefile /tmp/tmp8_vevhka
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000185,src:000000,time:12400,execs:3392,op:havoc,rep:1 (17 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp3u6euce5
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp3u6euce5 /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp3u6euce5
+Reading tracefile /tmp/tmp3u6euce5
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000186,src:000000,time:12590,execs:3442,op:havoc,rep:2 (18 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpkzz9r61t
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpkzz9r61t /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpkzz9r61t
+Reading tracefile /tmp/tmpkzz9r61t
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000187,src:000000,time:12630,execs:3453,op:havoc,rep:2,+cov (19 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpzhfxh3ls
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpzhfxh3ls /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpzhfxh3ls
+Reading tracefile /tmp/tmpzhfxh3ls
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000188,src:000000,time:12689,execs:3466,op:havoc,rep:1,+cov (20 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp7c9iynow
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp7c9iynow /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp7c9iynow
+Reading tracefile /tmp/tmp7c9iynow
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000189,src:000000,time:12763,execs:3485,op:havoc,rep:1 (21 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp2p1f5spx
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp2p1f5spx /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp2p1f5spx
+Reading tracefile /tmp/tmp2p1f5spx
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000190,src:000000,time:12856,execs:3510,op:havoc,rep:2 (22 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp7lr57jox
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp7lr57jox /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp7lr57jox
+Reading tracefile /tmp/tmp7lr57jox
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000191,src:000000,time:13117,execs:3582,op:havoc,rep:2 (23 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp0pq4218o
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp0pq4218o /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp0pq4218o
+Reading tracefile /tmp/tmp0pq4218o
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000192,src:000000,time:13146,execs:3590,op:havoc,rep:2 (24 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmp11_wuand
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmp11_wuand /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmp11_wuand
+Reading tracefile /tmp/tmp11_wuand
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000193,src:000000,time:13730,execs:3761,op:havoc,rep:2,+cov (25 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpabb_shrm
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpabb_shrm /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpabb_shrm
+Reading tracefile /tmp/tmpabb_shrm
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[+] AFL test case: id:000194,src:000000,time:13840,execs:3788,op:havoc,rep:2 (26 / 195), cycle: 0
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -a out/co/cov/lcov/trace.lcov_base -a out/co/cov/lcov/trace.lcov_info --output-file /tmp/tmpi2uosoqv
+lcov: ERROR: no valid records found in tracefile out/co/cov/lcov/trace.lcov_info
+Combining tracefiles.
+Reading tracefile out/co/cov/lcov/trace.lcov_base
+Reading tracefile out/co/cov/lcov/trace.lcov_info
+    Non-zero exit status '255' for CMD: /usr/bin/lcov --no-checksum -r /tmp/tmpi2uosoqv /usr/include/\*  --output-file out/co/cov/lcov/trace.lcov_info_final
+lcov: ERROR: no valid records found in tracefile /tmp/tmpi2uosoqv
+Reading tracefile /tmp/tmpi2uosoqv
+[-] Coverage file 'out/co/cov/lcov/trace.lcov_info_final' does not exist, skipping.
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds
+[-] No new AFL test cases, sleeping for 2 seconds

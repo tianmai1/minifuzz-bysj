@@ -1,0 +1,3 @@
+afl_cov_pid     : 2895350
+afl_cov_version : 0.6.2
+command_line    : /home/tianmai/workspace/bysj_plus/minifuzz-bysj/src/tools/cov/afl-cov -d out/co --live --sleep 2 --coverage-cmd=/home/tianmai/workspace/bysj_plus/minifuzz-bysj/test/codedoc/codedoc AFL_FILE --code-dir=../
