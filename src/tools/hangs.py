@@ -21,12 +21,11 @@ class hangs_analysis:
             print("缺少可执行文件及其执行指令")
             exit()
         else:
-            # 字符串转list
             self.cmd = self.cmd.split()
         gdb_command = ['gdb', '-ex', 'start','-ex','info proc','-ex','c','-ex',"echo 'bt-begin\\n'\n",'-ex','btpp 20\n','-ex',"echo 'bt-end\\n'\n",'--args']+self.cmd
         self.gdb_process = Popen(gdb_command, stdin=PIPE,stdout=PIPE,stderr=DEVNULL)
         self.gdb_pid=self.gdb_process.pid
-        #gdb停止
+        #获取目标的pid
         while True:
             gdb_output = self.gdb_process.stdout.readline()
             if 'process'in str(gdb_output):
@@ -35,17 +34,23 @@ class hangs_analysis:
         word_list = gdb_output.split()
         self.target_pid=int(word_list[1])
         time.sleep(self.timeout)
+
+        #监控目标进程状态
         try:
             process = psutil.Process(self.target_pid)
+        #如果没有目标进程，则不是超时
         except psutil.NoSuchProcess as e:
             return False,"The program is normal"
         status = process.status()
+        #如果状态为运行中则暂停目标程序
         if status=='running':
             os.kill(self.target_pid, signal.SIGINT)
+        #其他状态都不是无限循环
         elif status=='tracing-stop':
             return False,"not hangs,maybe crash"
         else :
             return False,"not xunhuan"
+        #程序暂停后会继续执行bt并且将调用堆栈记录下来，方便寻找循环点
         while True:
             a = self.gdb_process.stdout.readline()
             if 'bt-end'in str(a):

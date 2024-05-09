@@ -250,7 +250,7 @@ def run_thread(cmd: list,crash_analyzed_path: str,is_crash: bool = True , num: i
     if is_crash:
         partial_task = functools.partial(crash_run_analyzed, crash_analyzed_path=crash_analyzed_path)
     else:
-        partial_task = functools.partial(hangs_run_analyzed, crash_analyzed_path=crash_analyzed_path)
+        partial_task = functools.partial(hangs_run_analyzed, hangs_analyzed_path=crash_analyzed_path)
     try:
         with concurrent.futures.ThreadPoolExecutor(max_workers=num) as executor:
             futures = [executor.submit(partial_task, item) for item in cmd]    
@@ -278,6 +278,7 @@ def crash_run_analyzed(cmd: str,crash_analyzed_path:str):
     #print(command)
     try:
         out = subprocess.run(command,timeout=5,capture_output=True, text=True).stdout
+        #获取分析结果
         bt=out.split("----bt----\n",1)[1].split("\n----exploitable----",1)[0]
         exploitable=out.split("----exploitable----\n",1)[1].split("\n----asm----",1)[0]
         asm=out.split("----asm----\n",1)[1].split("\n----code----",1)[0]
@@ -289,11 +290,11 @@ def crash_run_analyzed(cmd: str,crash_analyzed_path:str):
         log+="栈回溯:\n```\n"
         log+=bt+"\n```\n\n"
         is_loop=False
+        #判断无限递归
         if len(bt.split("\n"))>99 and "offset" in bt.split("\n")[1]:
             btes=bt.split("\n")[1:][:-1]
             for i in range (len(btes)):
                 btes[i]=btes[i].split(" ",1)[1]
-            #print(btes)
             loop_data=find_loop(btes)
             is_loop=loop_data["is_loop"]
             block=loop_data["loop_block"]
@@ -318,6 +319,7 @@ def crash_run_analyzed(cmd: str,crash_analyzed_path:str):
             log+="崩溃点源代码:\n```\n"
             log+=code+"\n```\n\n"
         name=name+".md"
+        # 保存报告
         if not os.path.exists(crash_analyzed_path+"/"+name):
             with open(crash_analyzed_path+"/"+name, "w") as fd:
                 fd.write(log)
@@ -332,21 +334,19 @@ def crash_run_analyzed(cmd: str,crash_analyzed_path:str):
 
 def find_loop(data):
         key1 = 0
-        key2 = 0
         count=1
-        str_find = ['']
-        str_find[0] = data[0]
+        bt_str = ['']
+        bt_str[0] = data[0]
         for i in range(1, len(data)):
-            if (len(str_find) * (count + 1)) > len(data):
+            if (len(bt_str) * (count + 1)) > len(data):
                 break
-            if str_find == data[count * len(str_find):len(str_find) * (count + 1)]:
+            if bt_str == data[count * len(bt_str):len(bt_str) * (count + 1)]:
                 key1 = i + 1
-                if key1 % len(str_find) == 0:
-                    loop_block = str_find
+                if key1 % len(bt_str) == 0:
+                    loop_block = bt_str
                     count += 1
             else:
-                key2 = i + 1
-                str_find = data[0:len(str_find) + 1]
+                bt_str = data[0:len(bt_str) + 1]
         if count > 4:
             loop = True
         else:

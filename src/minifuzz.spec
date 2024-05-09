@@ -21,7 +21,7 @@ exe = EXE(
     [],
     exclude_binaries=True,
     name='minifuzz',
-    debug=False,
+    debug=True,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
